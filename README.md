@@ -124,10 +124,14 @@ The poject tasks that should be developed.
 - [ ] Project Requirements.
 - [x] Update the README.
 - [ ] Design Prototypes.
-- [ ] Create the project base structure.
+- [x] Create the project base structure.
 - [ ] Adding the project page interfaces.
 - [ ] Index page static structure.
 - [ ] Index page style.
+- [ ] Server pages structure.
+- [ ] Server pages style.
+- [ ] Login page structure.
+- [ ] Login page style.
 - [ ] Code review.
 
 #### Project Customer
@@ -135,16 +139,16 @@ This project was developed as study project. There isn't customer.
 
 ## Authors
 * **Felipe Palmuti** - *Computer Science student of Federal 
-University of Lavras* - lucas@lcfcompany.com.br
+University of Lavras* - fepalmuti@gmail.com
 
 * **Lucas Fiorini Braga** - *Computer Science student of Federal 
-University of Lavras* - lucas@lcfcompany.com.br
+University of Lavras* - lucasfiorini@msn.com
 
 * **Lucas Fonseca dos Santos** - *Computer Science student of Federal 
 University of Lavras* - lucas@lcfcompany.com.br
 
 * **Marco Aurélio Ferreira de Sousa** - *Computer Science student of Federal 
-University of Lavras* - lucas@lcfcompany.com.br
+University of Lavras* - maureliocfh@gmail.com
 
 ## License
 This project is licensed under no license. Copyleft is freedom!
