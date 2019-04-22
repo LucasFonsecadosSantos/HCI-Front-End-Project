@@ -121,7 +121,7 @@ Standart documentation based on: [Emoji List](https://gist.github.com/parmentf/0
 #### Control Task List
 The poject tasks that should be developed.
 
-- [ ] Project Requirements.
+- [x] Project Requirements.
 - [x] Update the README.
 - [ ] Design Prototypes.
 - [x] Create the project base structure.
