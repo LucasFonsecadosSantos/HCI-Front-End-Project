@@ -37,7 +37,7 @@ doctype html
 html
     head
         //----------------------------[METAS]----------------------------//
-        title null
+        title myRepublic - Início (Fulando da silva ciclano)
         meta(charset="utf-8")
         meta(name="keywords", content="")
         meta(http-equiv="content-type", content="text/html; charset=UTF-8")
@@ -91,7 +91,61 @@ html
         header
             include include/header.pug
         main
+            section#index01
+                .myWrapper
+                    .sectionTitle
+                        h2 informações
+                    .row
+                        .subIndex01
+                            .informCard
+                                .subInformCard
+                                    img(src="img/elements/avatar.jpg")
+                                .subInformCard
+                                    h3 Fulano da Silva
+                        .subIndex01
+                            .informCard
+                                .subInformCard
+                                    img(src="img/elements/icons/pay.svg")
+                                .subInformCard
+                                    h3 R$ 600.00
+                                    p balanço atual
+                        .subIndex01
+                            .informCard
+                                .subInformCard
+                                    img(src="img/elements/icons/money-bag.svg")
+                                .subInformCard
+                                    h3 R$ 109.90
+                                    P crédito atual
+                        .subIndex01
+                            .informCard
+                                .subInformCard
+                                    img(src="img/elements/icons/debt.svg")
+                                .subInformCard
+                                    h3 R$ 400.00
+                                    p dívida atual
+            section#index02
+                .myWrapper
+                    .row
+                        .subIndex02
+                            .box
+                                .sectionTitle
+                                    h2 moradores
+                        .subIndex02
+                            .box
+                                .sectionTitle
+                                    h2 relação de despesas
             
+            section#index03
+                .myWrapper
+                    .row
+                        .subIndex03
+                            .box
+                                .sectionTitle
+                                    h2 suas tarefas semanais
+                        .subIndex03
+                            .box
+                                .sectionTitle
+                                    h2 suas compras
         footer
             include include/footer.pug
     script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js", integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", crossorigin="anonymous")

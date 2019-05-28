@@ -1,0 +1,59 @@
+#index01
+    .subIndex01
+        @include responsive_system(3,3,3,3,3)
+        .informCard
+            cursor: pointer
+            height: 100px
+            padding-left: 4%
+            padding-right: 4%
+            display: flex
+            align-items: center
+            justify-content: center
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+            img
+                width: 50%
+            &:first-child
+                img
+                    @include border_radius(50%)
+            .subInformCard
+                background-color: transparent
+                &:first-child
+                    width:      30%
+                    float:      left
+                    text-align: left
+                &:last-child
+                    width:      70%
+                    float:      right
+                    text-align: right
+        &:nth-child(1) .informCard
+            background-color: $__COLOR__red
+            &:hover
+                background-color: lighten($__COLOR__red, 5)
+        &:nth-child(2) .informCard
+            background-color: $__COLOR__blue
+            &:hover
+                background-color: lighten($__COLOR__blue, 5)
+        &:nth-child(3) .informCard
+            background-color: $__COLOR__teal
+            &:hover
+                background-color: lighten($__COLOR__teal, 5)
+        &:nth-child(4) .informCard
+            background-color: $__COLOR__indigo
+            &:hover
+                background-color: lighten($__COLOR__indigo, 5)
+
+#index02
+    .subIndex02
+        .box
+            height: 400px !important
+        &:nth-child(1)
+            @include responsive_system(4,4,4,4,4)
+        &:nth-child(2)
+            @include responsive_system(8,8,8,8,8)
+        
+#index03
+    .subIndex03
+        @include responsive_system(6,6,6,6,6)
+        .box
+            height: 400px !important
+        
