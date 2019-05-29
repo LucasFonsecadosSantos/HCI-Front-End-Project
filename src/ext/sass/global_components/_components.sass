@@ -44,9 +44,66 @@
 .box
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
     background:
-        color: $__COLOR__light
+        color: $__COLOR__white
     padding: 1rem
     width: 100%
+    overflow-y: hidden
+    &:hover
+        overflow-y: scroll
+
+table
+    width: 100%
+    p
+        color: $__COLOR__black_
+    &:hover
+        overflow-x: scroll
+
+    &[class="data"]
+        overflow-y: hidden !important
+        .icon
+            width: 70%
+        .avatar
+            @include border_radius(50%)
+            width: 90%
+        thead
+            tr 
+                td 
+                    padding: 0em .5em
+                    p
+                        color: $__COLOR__gray
+                        font:
+                            weight: 700
+                        &:first-letter
+                            text-transform: uppercase
+        tbody
+            tr
+                cursor: pointer
+                //padding: 4em 0rem
+                border-bottom: solid 1px lighten($__COLOR__gray, 45)
+                &:hover
+                    background: darken($__COLOR__light, 8)
+                td
+                    padding: 1em .5em
+.dataList
+    width: 100%
+    list-style: none
+    max-height: 325px
+    overflow-y: hidden
+    &:hover
+        overflow-y: scroll
+    li
+        cursor: pointer
+        padding: 2rem 0rem
+        border-bottom: solid 1px lighten($__COLOR__gray, 10)
+        &:hover
+            background: darken($__COLOR__light, 8)
+        &:first-child
+            border-bottom: none
+
+.tag
+    @include border_radius(1rem)
+    &[class="warning"]
+        background: $__COLOR__warning
 //-------------------------------------------------------------------------------//
 
 

@@ -75,6 +75,26 @@ h4
 h5
 h6
 label
+    @include border_radius(8px)
+    padding: .2em 1em
+    text:
+        transform: uppercase
+    font:
+        family: $__FONT__text1_
+        weight: 700
+        size:   .7em
+    color: $__COLOR__white
+    &[class="warning"]
+        background: $__COLOR__warning
+    &[class="danger"]
+        background: $__COLOR__danger
+    &[class="information"]
+        background: $__COLOR__indigo
+    &[class="attention"]
+        color: $__COLOR__dark !important
+        background: $__COLOR__yellow
+    &[class="allright"]
+        background: $__COLOR__green
 a
 //-------------------------------------------------------------------------------//
 

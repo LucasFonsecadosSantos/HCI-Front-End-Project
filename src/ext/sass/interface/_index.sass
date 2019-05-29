@@ -50,10 +50,52 @@
             @include responsive_system(4,4,4,4,4)
         &:nth-child(2)
             @include responsive_system(8,8,8,8,8)
+        .data tbody tr td
+            &:nth-child(1)
+                width: 10%
+            &:nth-child(2)
+                width: 45%
+            &:nth-child(3)
+                width: 45%
+                text-align: center
         
 #index03
     .subIndex03
         @include responsive_system(6,6,6,6,6)
         .box
             height: 400px !important
+        &:first-child
+            .data
+                thead tr td
+                    &:nth-child(3), &:nth-child(4)
+                        text-align: center
+                tbody tr td
+                    &:nth-child(1)
+                        width: 10%
+                    &:nth-child(2)
+                        width: 55%
+                    &:nth-child(3)
+                        width: 10%
+                        text-align: center
+                    &:nth-child(4)
+                        width: 35%
+                        text-align: center
+        &:last-child
+            thead tr td
+                &:nth-child(5), &:nth-child(4)
+                    text-align: center
+            tbody tr td
+                &:nth-child(1)
+                    width: 10%
+                &:nth-child(2)
+                    width: 26.67%
+                &:nth-child(3)
+                    width: 26.67%
+                &:nth-child(4)
+                    width: 10%
+                    text-align: center
+                &:nth-child(5)
+                    width: 26.67%
+                    text-align: center
+                                        
         
