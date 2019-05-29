@@ -9989,6 +9989,10 @@ body[page=login] .box form {
 body[page=expense-listation] .box {
   margin-bottom: 2em;
 }
+body[page=expense-listation] .box .data .action {
+  width: 10%;
+}
+
 body[page=task-listation] .box {
   margin-bottom: 2em;
 }
