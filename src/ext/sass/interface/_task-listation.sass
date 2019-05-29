@@ -1,0 +1,37 @@
+body[page="task-listation"]
+    .box
+        margin-bottom: 2em
+    .personalTasks    
+        .data
+            tr td
+                &:nth-child(1)
+                    width: 10%
+                    text-align: center
+                &:nth-child(2)
+                    width: 70%
+                &:nth-child(3)
+                    width: 20%
+                    text-align: center
+    .allTasks
+        .data tr td
+            &:nth-child(1)
+                width: 10%
+                text-align: center
+            &:nth-child(2)
+                width: 35%
+            &:nth-child(3)
+                width: 35%
+                text-align: center
+                .row
+                    text-align: center
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    img
+                        @include border_radius(50%)
+                        width: 20%
+                        margin: 0px
+                        margin-right: 1em
+            &:nth-child(4)
+                width: 20%
+                text-align: center

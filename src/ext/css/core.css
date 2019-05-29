@@ -592,7 +592,7 @@ pre code {
 }
 
 .col-xl,
-.col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, body[page=login] .box .loginHeader .subLoginHeader:last-child, #index02 .subIndex02:nth-child(2), .col-xl-7, .col-xl-6, #index03 .subIndex03, .col-xl-5, .col-xl-4, body[page=login] .box .loginHeader .subLoginHeader:first-child, #index05 .subIndex05, #index02 .subIndex02:nth-child(1), .col-xl-3, #index01 .subIndex01, .col-xl-2, .col-xl-1, .col-lg,
+.col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, body[page=login] .box .loginHeader .subLoginHeader:last-child, #index02 .subIndex02:nth-child(2), .col-xl-7, .col-xl-6, #index03 .subIndex03, .pageTitle .subPageTitle, .col-xl-5, .col-xl-4, body[page=login] .box .loginHeader .subLoginHeader:first-child, #index05 .subIndex05, #index02 .subIndex02:nth-child(1), .col-xl-3, #index01 .subIndex01, .col-xl-2, .col-xl-1, .col-lg,
 .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
 .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm,
 .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col,
@@ -640,7 +640,7 @@ pre code {
   max-width: 41.6666666667%;
 }
 
-.col-6, #index03 .subIndex03 {
+.col-6, #index03 .subIndex03, .pageTitle .subPageTitle {
   flex: 0 0 50%;
   max-width: 50%;
 }
@@ -817,7 +817,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-sm-6, #index03 .subIndex03 {
+  .col-sm-6, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -998,7 +998,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-md-6, #index03 .subIndex03 {
+  .col-md-6, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -1179,7 +1179,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-lg-6, #index03 .subIndex03 {
+  .col-lg-6, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -1360,7 +1360,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-xl-6, #index03 .subIndex03 {
+  .col-xl-6, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -9534,15 +9534,6 @@ main {
   background-color: #f5f5f5;
 }
 
-.myWrapper {
-  padding: 1.5% 3% 1.5% 3%;
-}
-
-.sectionTitle {
-  text-align: left;
-  padding: 0% 0% 0.5% 0%;
-}
-
 p {
   font-family: "Open Sans", sans-serif;
   padding: 0px;
@@ -9610,6 +9601,18 @@ label[class=attention] {
 label[class=allright] {
   background: #4caf50;
 }
+label[class=notification] {
+  background: #ff9800;
+}
+
+.myWrapper {
+  padding: 1.5% 3% 1.5% 3%;
+}
+
+.sectionTitle {
+  text-align: left;
+  padding: 0% 0% 0.5% 0%;
+}
 
 input, textarea, select {
   border: none;
@@ -9632,11 +9635,11 @@ input:focus, textarea:focus, select:focus {
 }
 
 button {
-  border-radius: 0.5em;
-  -o-border-radius: 0.5em;
-  -ms-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
+  border-radius: 0.5esm;
+  -o-border-radius: 0.5esm;
+  -ms-border-radius: 0.5esm;
+  -moz-border-radius: 0.5esm;
+  -webkit-border-radius: 0.5esm;
   border: solid 0.2em #4A00E0;
   background: none;
   outline: none;
@@ -9649,6 +9652,7 @@ button {
 }
 button:hover {
   border-color: #8E2DE2;
+  color: #8E2DE2;
 }
 
 .box {
@@ -9702,6 +9706,9 @@ table[class=data] tbody tr {
   cursor: pointer;
   border-bottom: solid 1px #e6e7e9;
 }
+table[class=data] tbody tr:last-child {
+  border-bottom: none;
+}
 table[class=data] tbody tr:hover {
   background: #e1e1e1;
 }
@@ -9730,15 +9737,49 @@ table[class=data] tbody tr td {
   border-bottom: none;
 }
 
-.tag {
-  border-radius: 1rem;
-  -o-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -webkit-border-radius: 1rem;
+.pageTitle {
+  @extende .row;
+  border-bottom: solid 1px #8f8f8f;
+  margin-bottom: 1em;
 }
-.tag[class=warning] {
-  background: #ff5722;
+.pageTitle .subPageTitle:first-child {
+  text-align: left;
+}
+.pageTitle .subPageTitle:last-child {
+  text-align: right;
+}
+.pageTitle .subPageTitle:last-child p {
+  color: #424242;
+}
+
+.republicBanner {
+  width: 100%;
+  height: auto;
+  padding: 10% 3%;
+  text-align: center;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+}
+.republicBanner p {
+  margin-bottom: 1em;
+}
+.republicBanner h1 {
+  -webkit-text-fill-color: #fff !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  background: none !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.5em !important;
+  transform: scale(1, 0.7);
+  margin-bottom: 0.7em;
+}
+.republicBanner .titleLine {
+  margin-top: 0px;
+  padding: 0px;
+  height: 0.1em;
+  width: 10%;
+  background-image: -moz-linear-gradient(bottom, #4A00E0 0%, #8E2DE2 100%);
 }
 
 header .menu {
@@ -9942,6 +9983,55 @@ body[page=login] .box .loginHeader .subLoginHeader img {
   width: 100% !important;
 }
 body[page=login] .box form {
+  text-align: center;
+}
+
+body[page=expense-listation] .box {
+  margin-bottom: 2em;
+}
+body[page=task-listation] .box {
+  margin-bottom: 2em;
+}
+body[page=task-listation] .personalTasks .data tr td:nth-child(1) {
+  width: 10%;
+  text-align: center;
+}
+body[page=task-listation] .personalTasks .data tr td:nth-child(2) {
+  width: 70%;
+}
+body[page=task-listation] .personalTasks .data tr td:nth-child(3) {
+  width: 20%;
+  text-align: center;
+}
+body[page=task-listation] .allTasks .data tr td:nth-child(1) {
+  width: 10%;
+  text-align: center;
+}
+body[page=task-listation] .allTasks .data tr td:nth-child(2) {
+  width: 35%;
+}
+body[page=task-listation] .allTasks .data tr td:nth-child(3) {
+  width: 35%;
+  text-align: center;
+}
+body[page=task-listation] .allTasks .data tr td:nth-child(3) .row, body[page=task-listation] .allTasks .data tr td:nth-child(3) .line {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body[page=task-listation] .allTasks .data tr td:nth-child(3) .row img, body[page=task-listation] .allTasks .data tr td:nth-child(3) .line img {
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 20%;
+  margin: 0px;
+  margin-right: 1em;
+}
+body[page=task-listation] .allTasks .data tr td:nth-child(4) {
+  width: 20%;
   text-align: center;
 }
 
