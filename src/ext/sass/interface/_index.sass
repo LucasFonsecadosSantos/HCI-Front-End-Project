@@ -44,6 +44,9 @@
 
 #index02
     .subIndex02
+        #expenses
+            width: 100%
+            height: 325px
         .box
             height: 400px !important
         &:nth-child(1)
@@ -66,10 +69,7 @@
             height: 400px !important
         &:first-child
             .data
-                thead tr td
-                    &:nth-child(3), &:nth-child(4)
-                        text-align: center
-                tbody tr td
+                tr td
                     &:nth-child(1)
                         width: 10%
                     &:nth-child(2)
@@ -81,21 +81,37 @@
                         width: 35%
                         text-align: center
         &:last-child
-            thead tr td
-                &:nth-child(5), &:nth-child(4)
-                    text-align: center
-            tbody tr td
-                &:nth-child(1)
-                    width: 10%
-                &:nth-child(2)
-                    width: 26.67%
-                &:nth-child(3)
-                    width: 26.67%
-                &:nth-child(4)
-                    width: 10%
-                    text-align: center
-                &:nth-child(5)
-                    width: 26.67%
-                    text-align: center
-                                        
+            .data
+                tr td
+                    &:nth-child(1)
+                        width: 10%
+                    &:nth-child(2)
+                        width: 26.67%
+                    &:nth-child(3)
+                        width: 26.67%
+                    &:nth-child(4)
+                        width: 10%
+                        text-align: center
+                    &:nth-child(5)
+                        width: 26.67%
+                        text-align: center
+#index04
+    .box
+        height: 400px
+#index05
+    .subIndex05
+        @include responsive_system(4,4,4,4,4)
+        .box
+            height: 400px
+        .data
+            width: 100%
+            &:nth-child(1)
+                width: 10%
+            &:nth-child(2)
+                width: 60%
+            &:nth-child(3)
+                width: 30%
+#index06
+    .box
+        height: 600px
         

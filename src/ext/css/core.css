@@ -588,7 +588,7 @@ pre code {
 }
 
 .col-xl,
-.col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, #index02 .subIndex02:nth-child(2), .col-xl-7, .col-xl-6, #index03 .subIndex03, .col-xl-5, .col-xl-4, #index02 .subIndex02:nth-child(1), .col-xl-3, #index01 .subIndex01, .col-xl-2, .col-xl-1, .col-lg,
+.col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, #index02 .subIndex02:nth-child(2), .col-xl-7, .col-xl-6, #index03 .subIndex03, .col-xl-5, .col-xl-4, #index05 .subIndex05, #index02 .subIndex02:nth-child(1), .col-xl-3, #index01 .subIndex01, .col-xl-2, .col-xl-1, .col-lg,
 .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
 .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm,
 .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col,
@@ -626,7 +626,7 @@ pre code {
   max-width: 25%;
 }
 
-.col-4, #index02 .subIndex02:nth-child(1) {
+.col-4, #index05 .subIndex05, #index02 .subIndex02:nth-child(1) {
   flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
 }
@@ -803,7 +803,7 @@ pre code {
     max-width: 25%;
   }
 
-  .col-sm-4, #index02 .subIndex02:nth-child(1) {
+  .col-sm-4, #index05 .subIndex05, #index02 .subIndex02:nth-child(1) {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
@@ -984,7 +984,7 @@ pre code {
     max-width: 25%;
   }
 
-  .col-md-4, #index02 .subIndex02:nth-child(1) {
+  .col-md-4, #index05 .subIndex05, #index02 .subIndex02:nth-child(1) {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
@@ -1165,7 +1165,7 @@ pre code {
     max-width: 25%;
   }
 
-  .col-lg-4, #index02 .subIndex02:nth-child(1) {
+  .col-lg-4, #index05 .subIndex05, #index02 .subIndex02:nth-child(1) {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
@@ -1346,7 +1346,7 @@ pre code {
     max-width: 25%;
   }
 
-  .col-xl-4, #index02 .subIndex02:nth-child(1) {
+  .col-xl-4, #index05 .subIndex05, #index02 .subIndex02:nth-child(1) {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
@@ -9778,6 +9778,10 @@ header .menu .navbar-brand p {
   background-color: #4d5ec1;
 }
 
+#index02 .subIndex02 #expenses {
+  width: 100%;
+  height: 325px;
+}
 #index02 .subIndex02 .box {
   height: 400px !important;
 }
@@ -9795,42 +9799,60 @@ header .menu .navbar-brand p {
 #index03 .subIndex03 .box {
   height: 400px !important;
 }
-#index03 .subIndex03:first-child .data thead tr td:nth-child(3), #index03 .subIndex03:first-child .data thead tr td:nth-child(4) {
-  text-align: center;
-}
-#index03 .subIndex03:first-child .data tbody tr td:nth-child(1) {
+#index03 .subIndex03:first-child .data tr td:nth-child(1) {
   width: 10%;
 }
-#index03 .subIndex03:first-child .data tbody tr td:nth-child(2) {
+#index03 .subIndex03:first-child .data tr td:nth-child(2) {
   width: 55%;
 }
-#index03 .subIndex03:first-child .data tbody tr td:nth-child(3) {
+#index03 .subIndex03:first-child .data tr td:nth-child(3) {
   width: 10%;
   text-align: center;
 }
-#index03 .subIndex03:first-child .data tbody tr td:nth-child(4) {
+#index03 .subIndex03:first-child .data tr td:nth-child(4) {
   width: 35%;
   text-align: center;
 }
-#index03 .subIndex03:last-child thead tr td:nth-child(5), #index03 .subIndex03:last-child thead tr td:nth-child(4) {
-  text-align: center;
-}
-#index03 .subIndex03:last-child tbody tr td:nth-child(1) {
+#index03 .subIndex03:last-child .data tr td:nth-child(1) {
   width: 10%;
 }
-#index03 .subIndex03:last-child tbody tr td:nth-child(2) {
+#index03 .subIndex03:last-child .data tr td:nth-child(2) {
   width: 26.67%;
 }
-#index03 .subIndex03:last-child tbody tr td:nth-child(3) {
+#index03 .subIndex03:last-child .data tr td:nth-child(3) {
   width: 26.67%;
 }
-#index03 .subIndex03:last-child tbody tr td:nth-child(4) {
+#index03 .subIndex03:last-child .data tr td:nth-child(4) {
   width: 10%;
   text-align: center;
 }
-#index03 .subIndex03:last-child tbody tr td:nth-child(5) {
+#index03 .subIndex03:last-child .data tr td:nth-child(5) {
   width: 26.67%;
   text-align: center;
+}
+
+#index04 .box {
+  height: 400px;
+}
+
+#index05 .subIndex05 .box {
+  height: 400px;
+}
+#index05 .subIndex05 .data {
+  width: 100%;
+}
+#index05 .subIndex05 .data:nth-child(1) {
+  width: 10%;
+}
+#index05 .subIndex05 .data:nth-child(2) {
+  width: 60%;
+}
+#index05 .subIndex05 .data:nth-child(3) {
+  width: 30%;
+}
+
+#index06 .box {
+  height: 600px;
 }
 
 /*# sourceMappingURL=core.css.map */
