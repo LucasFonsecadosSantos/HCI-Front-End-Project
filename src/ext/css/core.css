@@ -6,6 +6,10 @@
   padding: 0px;
 }
 
+body {
+  padding-top: 2.9em;
+}
+
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -9718,6 +9722,14 @@ header .menu .navbar-brand {
 }
 header .menu .navbar-brand p {
   font-family: "Roboto", sans-serif;
+}
+
+footer {
+  height: auto;
+  min-height: 100vh;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
 }
 
 #index01 .subIndex01 .informCard {
