@@ -1,4 +1,8 @@
-main[page="login"]
+body[page="login"]
+    section
+        background-color: transparent
+        width: 100%
+    padding: 0px
     min-height: 100vh
     height: auto
     display: flex
@@ -7,9 +11,28 @@ main[page="login"]
     background: #8E2DE2
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2)
     background: linear-gradient(to right, #4A00E0, #8E2DE2)
+    h1
+        &:after
+            content: &#169
+            font:
+                size: .5em
+                weight: 300
     .box
-        width: 40%
-        height: 400px
+        width: 30% !important
+        display: flex
+        justify-content: center
+        align-items: center
+        .loginHeader
+            .subLoginHeader
+                img
+                    width: 100% !important
+                &:first-child
+                    @include responsive_system(4,4,4,4,4)
+                &:last-child
+                    @include responsive_system(8,8,8,8,8)
+        form
+            text-align: center
+    
 //----------------------------------[ RESPONSIVE COND. ]-------------------------//
 //@media screen and (min-width: 1921px)
 //@media screen and (max-width: 1750px) and (min-width: 1550px)

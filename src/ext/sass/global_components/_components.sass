@@ -41,6 +41,42 @@
 
 
 //----------------------------------[ NAME ]-------------------------------------//
+input, textarea, select
+    @extend .transitions
+    border: none
+    border-bottom: solid 1px #4A00E0
+    color: #4A00E0
+    outline: none
+    background: none
+    padding: .2em 0em
+    width: 100%
+    margin-bottom: 1em
+    font:
+        family: $__FONT__title_
+        weight: 300
+        size: 1em
+    &:hover
+        @extend .transitions
+        border-bottom-color: lighten(#4A00E0, 50)
+    &:focus
+        @extend .transitions
+        border-bottom-color: #8E2DE2
+button
+    @extend .transitions
+    @include border_radius(.5em)
+    border: solid .2em #4A00E0
+    background: none
+    outline: none
+    padding: .2em 1.5em
+    cursor: pointer
+    color: #4A00E0
+    font:
+        family: $__FONT__title_
+        weight: 500
+        size: .8em
+    &:hover
+        @extend .transitions
+        border-color: #8E2DE2
 .box
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
     background:
@@ -49,7 +85,10 @@
     width: 100%
     overflow-y: hidden
     &:hover
-        overflow-y: scroll
+        &[scroll="enable"]
+            overflow-y: scroll
+        &[scroll="disable"]
+            overflow-y: hidden !important
 
 table
     width: 100%
