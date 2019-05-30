@@ -1,0 +1,18 @@
+mixin republicBanner(republicName, title)
+    section.republicBanner
+        p república
+        h1= republicName
+        hr
+        //h2= title
+    
+mixin pageTitle(title, path)
+    .pageTitle
+        .row
+            .subPageTitle
+                h2= title
+            .subPageTitle
+                p= path
+
+mixin sectionTitle(title)
+    .sectionTitle
+        h2= title

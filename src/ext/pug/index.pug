@@ -86,6 +86,7 @@ html
         link(rel="icon", type="image/png", sizes="96x96", href="img/favicon/favicon-96x96.png")
         link(rel="icon", type="image/png", sizes="16x16", href="img/favicon/favicon-16x16.png")
         link(rel="manifest", href="img/favicon/manifest.json")
+        include _mixins.pug
         //---------------------------------------------------------------//
     body
         header
@@ -93,8 +94,7 @@ html
         main
             section#index01
                 .myWrapper
-                    .sectionTitle
-                        h2 informações
+                    +sectionTitle("informações")
                     .row
                         .subIndex01
                             .informCard
@@ -128,9 +128,8 @@ html
                 .myWrapper
                     .row
                         .subIndex02
-                            .box
-                                .sectionTitle
-                                    h2 a galera da república
+                            .box(scroll="enable")
+                                +sectionTitle("seus amigos moradores")
                                 table.data
                                     thead
                                     tbody
@@ -170,18 +169,16 @@ html
                                             td
                                                 label.information usuário
                         .subIndex02
-                            .box
-                                .sectionTitle
-                                    h2 como andam minhas despesas?
+                            .box(scroll="disable")
+                                +sectionTitle("como andam as minhas despesas?")
                                     canvas#expenses
             
             section#index03
                 .myWrapper
                     .row
                         .subIndex03
-                            .box
-                                .sectionTitle
-                                    h2 o que preciso fazer essa semana?
+                            .box(scroll="enable")
+                                +sectionTitle("o que eu preciso fazer essa semana?")
                                 table.data
                                     thead
                                         tr
@@ -230,9 +227,8 @@ html
                                             td
                                                 label.attention agendado
                         .subIndex03
-                            .box
-                                .sectionTitle
-                                    h2 o que andei comprando?
+                            .box(scroll="enable")
+                                +sectionTitle("o que andei comprando?")
                                 table.data
                                     thead
                                         tr
@@ -281,9 +277,8 @@ html
                                                 label.danger aguardando aprovação
             section#index04
                 .myWrapper
-                    .box
-                        .sectionTitle
-                            h2 feed de mensagens
+                    .box(scroll="enable")
+                        +sectionTitle("feed de mensagens")
                         table.data
                             thead
                                 tr
@@ -351,9 +346,8 @@ html
                 .myWrapper
                     .row
                         .subIndex05
-                            .box
-                                .sectionTitle
-                                    h2 meus pertences
+                            .box(scroll="enable")
+                                +sectionTitle("meus pertences")
                                 table.data
                                     thead
                                         tr
@@ -386,18 +380,15 @@ html
                                             td
                                                 label.information coletivo
                         .subIndex05
-                            .box
-                                .sectionTitle
-                                    h2 festas para este mês
+                            .box(scroll="enable")
+                                +sectionTitle("festas para este mês")
                         .subIndex05
                             .box
-                                .sectionTitle
-                                    h2 outro
+                                +sectionTitle("outro")
             section#index06
                 .myWrapper
                     .box
-                        .sectionTitle
-                            h2 calendario
+                        +sectionTitle("calendário")
         footer
             include include/footer.pug
     script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js", integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", crossorigin="anonymous")

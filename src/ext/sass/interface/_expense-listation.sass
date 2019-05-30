@@ -1,0 +1,43 @@
+body[page="expense-listation"]
+    .action
+        width: 5%
+    .personalExpenses
+        margin-bottom: 2em
+        .data
+            tr td
+                &:nth-child(1)
+                    width: 8%
+                    text-align: center
+                &:nth-child(2)
+                    width: 50.6%
+                &:nth-child(3)
+                    width: 20.6%
+                    text-align: center
+                &:nth-child(4)
+                    width: 30.6%
+                    text-align: center
+    .allExpenses
+        .data tr td
+            &:nth-child(1)
+                width: 8%
+                text-align: center
+            &:nth-child(2)
+                width: 41.33%
+            &:nth-child(3)
+                width: 21.33%
+                .row
+                    text-align: center
+                    display: flex
+                    justify-content: left
+                    align-items: center
+                    img
+                        @include border_radius(50%)
+                        width: 10%
+                        margin: 0px
+                        margin-right: 1em
+            &:nth-child(4)
+                width: 16.33%
+                text-align: center
+            &:nth-child(5)
+                width: 13%
+                text-align: center
