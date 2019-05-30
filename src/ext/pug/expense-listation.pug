@@ -86,48 +86,40 @@ html
         link(rel="icon", type="image/png", sizes="96x96", href="img/favicon/favicon-96x96.png")
         link(rel="icon", type="image/png", sizes="16x16", href="img/favicon/favicon-16x16.png")
         link(rel="manifest", href="img/favicon/manifest.json")
+        include _mixins.pug
         //---------------------------------------------------------------//
     body(page="expense-listation")
         header
             include include/header.pug
-            section.republicBanner
-                p república
-                h1 incendiaria
-                .titleLine
+            +republicBanner("incendiaria","registro de despesas")
         main
             section
                 .myWrapper
-                    .pageTitle
-                        .row
-                            .subPageTitle
-                                h2 despesas da república
-                            .subPageTitle
-                                p home > despesas
+                    +pageTitle("despesas da república", "home > despesas")
                     .box.personalExpenses(scroll="disable")
-                        .sectionTitle
-                            h2 despesas realizadas por você
-                            table.data
-                                thead
-                                    tr
-                                        td
-                                            p data/hora
-                                        td
-                                            p titulo
-                                        td
-                                            p status
-                                        td
-                                            p ação
-                                tbody
-                                    tr
-                                        td
-                                            p 19/04
-                                            p 20:33
-                                        td
-                                            p Compra Rex
-                                        td
-                                            label.yellow aguardando aprovação
-                                        td
-                                            .row
-                                                a(href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
-                                                    img.action(src="img/elements/icons/remove.svg")
+                        +sectionTitle("despesas realizadas por você")
+                        table.data
+                            thead
+                                tr
+                                    td
+                                        p data/hora
+                                    td
+                                        p titulo
+                                    td
+                                        p status
+                                    td
+                                        p ação
+                            tbody
+                                tr
+                                    td
+                                        p 19/04
+                                        p 20:33
+                                    td
+                                        p Compra Rex
+                                    td
+                                        label.yellow aguardando aprovação
+                                    td
+                                        .row
+                                            a(href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
+                                                img.action(src="img/elements/icons/remove.svg")
                     .box.allExpenses(scroll="disable")

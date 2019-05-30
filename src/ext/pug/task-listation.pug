@@ -86,26 +86,18 @@ html
         link(rel="icon", type="image/png", sizes="96x96", href="img/favicon/favicon-96x96.png")
         link(rel="icon", type="image/png", sizes="16x16", href="img/favicon/favicon-16x16.png")
         link(rel="manifest", href="img/favicon/manifest.json")
+        include _mixins.pug
         //---------------------------------------------------------------//
     body(page="task-listation")
         header
             include include/header.pug
-            section.republicBanner
-                p república
-                h1 keskara
-                .titleLine
+            +republicBanner("keskara", "tarefas da república")
         main
             section
                 .myWrapper
-                    .pageTitle
-                        .row
-                            .subPageTitle
-                                h2 tarefas da república
-                            .subPageTitle
-                                p home > tarefas
+                    +pageTitle("tarefas da república", "home > tarefas")
                     .box.personalTasks(scroll="disable")
-                        .sectionTitle
-                            h2 tarefas que foram designadas a você
+                        +sectionTitle("tarefas que foram designadas a você")
                         table.data
                             thead
                                 tr
@@ -131,8 +123,7 @@ html
                                     td
                                         label.notification 1 nova observação
                     .box.allTasks(scroll="disable")
-                        .sectionTitle
-                            h2 tarefas da república
+                        +sectionTitle("tarefas da república")
                         table.data
                             thead
                                 tr
