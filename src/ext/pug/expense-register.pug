@@ -114,6 +114,16 @@ html
                                     input(type="text", name="company", placeholder="Nome do beneficiário", title="Insira neste campo o nome do beneficiário. Ex.: CEMIG", alt="Campo para inserir o nome do beneficiário da despesa a ser registrada.")
                                     p Ex.: CEMIG
                             .row.registerFormLine
+                                .subExpenseRegisterForm
+                                    input(type="text", name="value", placeholder="Valor (15.00)", title="Insira neste campo o valor total da despesa. Ex.: 8.00", alt="Campo para inserir o valor total da despesa a ser contabilizada.")
+                                    p Ex.: 15.00
+                                .subExpenseRegisterForm
+                                    input(type="file", name="receipt", alt="Campo para selecionar um arquivo de recibo ou comprovante.", title="Selecione um arquivo de recibo ou cumpom fiscal.")
+                                    p - Selecione um arquivo de cupom fiscal ou recibo.
+                            .row.specialFormLine
                                 textarea(name="additionalInformation", alt="Campo para inserir informações adicionais sobre a despesa.", title="Insira neste campo informações adicionais sobre a despesa.", placeholder="Informações adicionais")
+                            .row.specialFormLine
+                                button(type="submit", alt="Botão para registrar a nova despesa.", title="Clique para registrar a nova despesa.") registrar
+                                button(type="submit", alt="Botão para limpar o formulário de registro.", title="Clique para limpar o formulário de registro.") limpar formulário
         footer
             include include/footer.pug
