@@ -1,0 +1,35 @@
+body[page="task-register"]
+    .registerFormLine, .specialFormLine
+        margin-bottom: 2em
+        button
+            margin-right: 1em
+    .specialFormLine
+        @include responsive_system(12,12,12,12,12)
+    .subTaskRegisterForm
+        @include responsive_system(6,6,6,6,6)
+        display: flex
+        justify-content: center
+        align-items: center
+        .withoutFlex
+            display: inline !important
+        .fix2
+            display: flex
+            justify-content: center
+            align-items: center    
+            input[type="date"]
+                width: 92%
+        .fix
+            display: flex
+            justify-content: center
+            align-items: center
+            p
+                margin-right: 3em
+            input[type="radio"]
+                margin-right: .250em
+            input[type="checkbox"]
+                margin-right: .250em
+        input
+            margin-bottom: 0px !important
+        p
+            color: $__COLOR__dark
+            font-size: .8em

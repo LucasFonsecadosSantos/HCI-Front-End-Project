@@ -1,6 +1,10 @@
 body[page="expense-register"]
-    .registerFormLine
+    .registerFormLine, .specialFormLine
         margin-bottom: 2em
+        button
+            margin-right: 1em
+    .specialFormLine
+        @include responsive_system(12,12,12,12,12)
     .subExpenseRegisterForm
         @include responsive_system(6,6,6,6,6)
         input
