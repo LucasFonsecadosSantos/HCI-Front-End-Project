@@ -91,7 +91,7 @@ html
     body(page="expense-register")
         header
             include include/header.pug
-            +republicBanner("incendiaria","registrar nova despesa")
+            +republicBanner("incendiaria","")
         main
             section
                 .myWrapper
@@ -101,29 +101,29 @@ html
                         form(action="#")
                             .row.registerFormLine
                                 .subExpenseRegisterForm
-                                    input(type="text", name="title", placeholder="Titulo da despesa", title="Insira neste campo um titulo para a despesa a ser registrada. Ex.: Conta de Energia", alt="Campo para informar um titulo para a despesa a ser registrada.")
+                                    input(type="text", required, name="title", placeholder="Titulo da despesa", title="Insira neste campo um titulo para a despesa a ser registrada. Ex.: Conta de Energia", alt="Campo para informar um titulo para a despesa a ser registrada.")
                                     p Ex.: Conta de Energia
                                 .subExpenseRegisterForm
-                                    input(type="text", name="company", placeholder="Nome do beneficiário", title="Insira neste campo o nome do beneficiário. Ex.: CEMIG", alt="Campo para inserir o nome do beneficiário da despesa a ser registrada.")
+                                    input(type="text", required, name="company", placeholder="Nome do beneficiário", title="Insira neste campo o nome do beneficiário. Ex.: CEMIG", alt="Campo para inserir o nome do beneficiário da despesa a ser registrada.")
                                     p Ex.: CEMIG
                             .row.registerFormLine
                                 .subExpenseRegisterForm
-                                    input(type="text", name="title", placeholder="Titulo da despesa", title="Insira neste campo um titulo para a despesa a ser registrada. Ex.: Conta de Energia", alt="Campo para informar um titulo para a despesa a ser registrada.")
+                                    input(type="text", required, name="title", placeholder="Titulo da despesa", title="Insira neste campo um titulo para a despesa a ser registrada. Ex.: Conta de Energia", alt="Campo para informar um titulo para a despesa a ser registrada.")
                                     p Ex.: Conta de Energia
                                 .subExpenseRegisterForm
-                                    input(type="text", name="company", placeholder="Nome do beneficiário", title="Insira neste campo o nome do beneficiário. Ex.: CEMIG", alt="Campo para inserir o nome do beneficiário da despesa a ser registrada.")
-                                    p Ex.: CEMIG
+                                    input(type="date",required, pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}", name="expenseDate", placeholder="Data da despesa", title="Selecione neste campo a data em que a despesa ocorreu.", alt="Campo para selecionar a data em que ocorreu a despesa.")
+                                    p Ex.: 13/02/2019
                             .row.registerFormLine
                                 .subExpenseRegisterForm
-                                    input(type="text", name="value", placeholder="Valor (15.00)", title="Insira neste campo o valor total da despesa. Ex.: 8.00", alt="Campo para inserir o valor total da despesa a ser contabilizada.")
+                                    input(type="text", required, name="value", placeholder="Valor (15.00)", title="Insira neste campo o valor total da despesa. Ex.: 8.00", alt="Campo para inserir o valor total da despesa a ser contabilizada.")
                                     p Ex.: 15.00
                                 .subExpenseRegisterForm
-                                    input(type="file", name="receipt", alt="Campo para selecionar um arquivo de recibo ou comprovante.", title="Selecione um arquivo de recibo ou cumpom fiscal.")
+                                    input(type="file", required, name="receipt", alt="Campo para selecionar um arquivo de recibo ou comprovante.", title="Selecione um arquivo de recibo ou cumpom fiscal.")
                                     p - Selecione um arquivo de cupom fiscal ou recibo.
                             .row.specialFormLine
-                                textarea(name="additionalInformation", alt="Campo para inserir informações adicionais sobre a despesa.", title="Insira neste campo informações adicionais sobre a despesa.", placeholder="Informações adicionais")
+                                textarea(name="additionalInformation",rows="5", alt="Campo para inserir informações adicionais sobre a despesa.", title="Insira neste campo informações adicionais sobre a despesa.", placeholder="Informações adicionais")
                             .row.specialFormLine
-                                button(type="submit", alt="Botão para registrar a nova despesa.", title="Clique para registrar a nova despesa.") registrar
-                                button(type="submit", alt="Botão para limpar o formulário de registro.", title="Clique para limpar o formulário de registro.") limpar formulário
+                                button.btn-blue(type="submit", alt="Botão para registrar a nova despesa.", title="Clique para registrar a nova despesa.") registrar
+                                button.btn-blue(type="submit", alt="Botão para limpar o formulário de registro.", title="Clique para limpar o formulário de registro.") limpar formulário
         footer
             include include/footer.pug
