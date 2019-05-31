@@ -98,4 +98,5 @@ html
                             h1 myRepublic
                     input(name="user",type="email" placeholder="Usuário", title="Insira seu usuário aqui. Ex. João da Silva", alt="Campo para inserir o usuário.")
                     input(name="password",type="password", placeholder="Senha", title="Insira sua senha aqui.", alt="Campo para inserir a senha.")
-                    button(type="submit", title="Clique para acessar sua conta.", alt="Botão para acessar sua conta.") Acessar
+                    button(type="button",onclick="loginSimulation(this.form);", title="Clique para acessar sua conta.", alt="Botão para acessar sua conta.") Acessar
+    script(src="ext/js/core.js")
