@@ -141,11 +141,21 @@ html
                                             td 21/04/2019
                             .row.registerFormLine
                                 .subTaskRegisterForm(style="display: inline")
-                                    select(name="dweller", placeholder="- Selecione um morador -", title="Selecione um morador para ficar responsável pela tarefa.", alt="Campo para selecionar o(s) morador(es) envolvido(s) na presente tarefa.")
-                                        option(value="0", selected) - Selecione um morador -
+                                    .fix2
+                                        select(style="margin-bottom: 0px !important", name="dweller", placeholder="- Selecione um morador -", title="Selecione um morador para ficar responsável pela tarefa.", alt="Campo para selecionar o(s) morador(es) envolvido(s) na presente tarefa.")
+                                            option(value="0", selected) - Selecione um morador -
+                                            option(value="15") Lucas Fonseca dos Santos
+                                            option(value="15") Marco Aurélio Ferreira de Sousa
+                                            option(value="15") Lucas Fiorini Braga
+                                            option(value="15") Felipe Palmuti
+                                        button() +
                                 .subTaskRegisterForm(style="display: inline")
-                                    input(type="file", name="receipt", alt="Campo para selecionar um arquivo de recibo ou comprovante.", title="Selecione um arquivo de recibo ou cumpom fiscal.")
-                                    p - Selecione um arquivo de cupom fiscal ou recibo.
+                                    p Moradores responsáveis por esta tarefa:
+                                    table.data
+                                        tr
+                                            td Lucas Fonseca dos Santos
+                                        tr
+                                            td Marco Aurélio Ferreira de Sousa
                             .row.specialFormLine(style="display: inline")
                                 textarea(name="additionalInformation",rows="5", alt="Campo para inserir informações adicionais sobre a tarefa.", title="Insira neste campo informações adicionais sobre a tarefa.", placeholder="Informações adicionais")
                             .row.specialFormLine(style="display: inline")
