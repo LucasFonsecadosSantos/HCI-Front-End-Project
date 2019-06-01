@@ -88,7 +88,7 @@ html
         link(rel="manifest", href="img/favicon/manifest.json")
         include _mixins.pug
         //---------------------------------------------------------------//
-    body(page="expense-listation")
+    body(page="expense-listation",onload="expenseRegisterSimulation(this)")
         header
             include include/header.pug
             +republicBanner("incendiaria","registro de despesas")
@@ -98,7 +98,7 @@ html
                     +pageTitle("despesas da república", "home > despesas")
                     .box.personalExpenses(scroll="disable")
                         +sectionTitle("despesas realizadas por você")
-                        table.data
+                        table.data#personalExpenseList
                             thead
                                 tr
                                     td
@@ -120,7 +120,7 @@ html
                                         label.attention aguardando aprovação
                                     td
                                         .row
-                                            a(href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
+                                            a(onclick="removeExpenseRow(this.rowIndex)", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
                                                 img.action(src="img/elements/icons/remove.svg")
                                 tr
                                     td
@@ -132,7 +132,7 @@ html
                                         label.attention aguardando aprovação
                                     td
                                         .row
-                                            a(href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
+                                            a(onclick="removeExpenseRow(this.rowIndex)", href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
                                                 img.action(src="img/elements/icons/remove.svg")
                                 tr
                                     td
@@ -144,7 +144,7 @@ html
                                         label.attention aguardando aprovação
                                     td
                                         .row
-                                            a(href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
+                                            a(onclick="removeExpenseRow(this.rowIndex)", href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
                                                 img.action(src="img/elements/icons/remove.svg")
                                 tr
                                     td
@@ -156,7 +156,7 @@ html
                                         label.attention aguardando aprovação
                                     td
                                         .row
-                                            a(href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
+                                            a(onclick="removeExpenseRow(this.rowIndex)", href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
                                                 img.action(src="img/elements/icons/remove.svg")
                                 tr
                                     td
@@ -168,7 +168,7 @@ html
                                         label.allright aprovado
                                     td
                                         .row
-                                            a(href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
+                                            a(onclick="removeExpenseRow(this.rowIndex)", href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
                                                 img.action(src="img/elements/icons/remove.svg")
                                 tr
                                     td
@@ -180,7 +180,7 @@ html
                                         label.danger desaprovado
                                     td
                                         .row
-                                            a(href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
+                                            a(onclick="removeExpenseRow(this.rowIndex)", href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
                                                 img.action(src="img/elements/icons/remove.svg")
                     .box.allExpenses(scroll="disable")
                         +sectionTitle("depesas contabilizadas da república")
@@ -214,3 +214,4 @@ html
                                         .row
                                             a(href="#", title="Clique para remover este registro.", alt="Botão para remover o presente registro.")
                                                 img.action(src="img/elements/icons/remove.svg")
+    script(src="ext/js/core.js")

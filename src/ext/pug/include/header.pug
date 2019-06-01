@@ -15,11 +15,11 @@ nav.navbar.fixed-top.navbar-expand-lg.menu
                 a.nav-link(href="indices.html") índices
             li.nav-item.dropdown
                 a.nav-link.dropdown-toggle#navbarDropdown(href="#", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") controle
-                .dropdown-menu(aria-labelledby="navbarDropdown")
-                    a.dropdown-item(href="#") Action
-                    a.dropdown-item(href="#") Another action
-                    .dropdown-divider
-                    a.dropdown-item(href="#") Something else here
+                .dropdown-menu#navMenu(aria-labelledby="navbarDropdown")
+                    //a.dropdown-item(href="#") Registrar tarefa
+                    a.dropdown-item(href="expense-register.html") Registrar Despesa
+                    //.dropdown-divider
+                    //a.dropdown-item(href="#") Something else here
       
             li.nav-item
                 a.nav-link(disabled href="#") fulano

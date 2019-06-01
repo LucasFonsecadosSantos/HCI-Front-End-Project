@@ -9816,6 +9816,9 @@ header .menu ul li a {
   color: #FAFAFA !important;
   text-transform: uppercase;
 }
+header .menu .dropdown-item {
+  color: #424242 !important;
+}
 header .menu a img {
   width: 6% !important;
 }

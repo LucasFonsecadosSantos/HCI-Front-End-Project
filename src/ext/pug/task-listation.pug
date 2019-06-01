@@ -88,7 +88,7 @@ html
         link(rel="manifest", href="img/favicon/manifest.json")
         include _mixins.pug
         //---------------------------------------------------------------//
-    body(page="task-listation")
+    body(page="task-listation", onload="taskRegisterSimulation(this)")
         header
             include include/header.pug
             +republicBanner("keskara", "tarefas da república")
@@ -98,7 +98,7 @@ html
                     +pageTitle("tarefas da república", "home > tarefas")
                     .box.personalTasks(scroll="disable")
                         +sectionTitle("tarefas que foram designadas a você")
-                        table.data
+                        table.data#personalTaskList
                             thead
                                 tr
                                     td
@@ -160,3 +160,4 @@ html
                                         label.danger não executada
         footer
             include include/footer.pug
+        script(src="ext/js/core.js")

@@ -98,7 +98,7 @@ html
                     +pageTitle("registrar nova despesa", "home > controle > registro de despesa")
                     .box.personalExpenses(scroll="disable")
                         +sectionTitle("preencha o formulário a seguir")
-                        form(action="#")
+                        form(action="expense-listation.html", onsubmit="expenseRegisterSimulation()")
                             .row.registerFormLine
                                 .subExpenseRegisterForm
                                     input(type="text", required, name="title", placeholder="Titulo da despesa", title="Insira neste campo um titulo para a despesa a ser registrada. Ex.: Conta de Energia", alt="Campo para informar um titulo para a despesa a ser registrada.")
@@ -108,8 +108,8 @@ html
                                     p Ex.: CEMIG
                             .row.registerFormLine
                                 .subExpenseRegisterForm
-                                    input(type="text", required, name="title", placeholder="Titulo da despesa", title="Insira neste campo um titulo para a despesa a ser registrada. Ex.: Conta de Energia", alt="Campo para informar um titulo para a despesa a ser registrada.")
-                                    p Ex.: Conta de Energia
+                                    input(type="text", required, name="itens", placeholder="Itens da despesa", title="Insira neste campo um titulo para a despesa a ser registrada. Ex.: Conta de Energia", alt="Campo para informar um titulo para a despesa a ser registrada.")
+                                    p Ex.: Agua Sanitária, vassoura, limpa vidro, ...
                                 .subExpenseRegisterForm
                                     input(type="date",required, pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}", name="expenseDate", placeholder="Data da despesa", title="Selecione neste campo a data em que a despesa ocorreu.", alt="Campo para selecionar a data em que ocorreu a despesa.")
                                     p Ex.: 13/02/2019
