@@ -21,5 +21,9 @@ nav.navbar.fixed-top.navbar-expand-lg.menu
                     //.dropdown-divider
                     //a.dropdown-item(href="#") Something else here
       
-            li.nav-item
-                a.nav-link(disabled href="#") fulano
+            li.nav-item.dropdown
+                a.nav-link.dropdown-toggle#navbarDropdown(href="#", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Fulano
+                .dropdown-menu#navMenu(aria-labelledby="navbarDropdown")
+                    a.dropdown-item(href="bug_report.html") Reportar um Problema
+                    .dropdown-divider
+                    a.dropdown-item(href="login.html") Logout

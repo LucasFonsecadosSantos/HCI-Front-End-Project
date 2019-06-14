@@ -24,8 +24,8 @@ function accountValidation(indexPage) {
     var params = getUrlVars(indexPage);
     if (params["account"] == "admin") {
         document.getElementById("navMenu").innerHTML += "<a class=\"dropdown-item\" href=\"task-register.html\"> Registrar tarefa </a>";
-    } else {
-
+    } else if (params["account"] == undefined){
+        location="login.html";
     }
 }
 
@@ -79,4 +79,16 @@ function expenseRegisterFieldsValidation(registerForm) {
         (registerForm.receipt       != "")  &&
         (registerForm.itens         != "")
     )
+}
+
+function addManualTaskDate(form) {
+    var value = document.getElementById("manualDate").value;
+    document.getElementById("manualDateData").insertRow(0).insertCell(0).innerHTML = value;
+}
+
+function addTaskDwellers(form) {
+    var combo = document.getElementById("dweller");
+    var dweller = combo.options[combo.selectedIndex].text;
+    combo.remove(combo.selectedIndex);
+    document.getElementById("taskDwellerTable").insertRow(0).insertCell(0).innerHTML = dweller;
 }
