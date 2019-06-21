@@ -1,0 +1,127 @@
+// DEVELOPED BY: Lucas Fonseca dos Santos
+///////////////////////////////////////////////////////////////////////////////////
+///                                                                             ///
+/// [PROJECT]: Name: null                                                       ///
+///            URL:  null                                                       ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+/// [DEVELOPMENT]:  Code Developer:   Lucas Fonseca dos Santos.                 ///
+///                 System Developer: Lucas Fonseca dos Santos.                 ///
+///                 Design Creater:   Lucas Fonseca dos Santos.                 ///
+///                 Tester:           Lucas Fonseca dos Santos.                 ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+/// [INFORMATIONS]: Fonts:  Ubuntu, 300, 400, 500, 700                          ///
+///                         Open Sans, 300, 400, 600, 700                       ///
+///                         Open Sans Condensed, 300, 700                       ///
+///                 Colors: #000000                                             ///
+///                         #000000                                             ///
+///                         #000000                                             ///
+///                         #000000                                             ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+///   Use .content to write class .container by bootstrap and .line to write    ///
+///   .row class by bootstrap.                                                  ///
+///                                                                             ///
+///   Use mixin extend_grid() with the params: LG value, MD value, SM value,    ///
+///   XS value in respective order to extend grid system of bootstrap.          ///
+///                                                                             ///
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///                              FILE INFORMATION                               ///
+///-----------------------------------------------------------------------------///
+/// [NAME]: Core                                                                ///
+/// [CONTENT]: Responsible for all front end struct.                            ///
+///////////////////////////////////////////////////////////////////////////////////
+doctype html
+html
+    head
+        include include/_mixins.pug
+        //----------------------------[METAS]----------------------------//
+        +headerSettings("myRepublic - Fulano da silva","None description.","myRepublic","#5659A6")
+        //---------------------------------------------------------------//
+        //---------------------------[IMPORTS]---------------------------//
+        include include/_link-imports.pug
+        //---------------------------------------------------------------//
+    body(page="dweller")
+        header
+            include include/_header.pug
+            +republicBanner("incendiaria","morador fulano da silva")
+        main
+            section
+                .myWrapper
+                    +pageTitle("", "Detalhes do Morador")
+                    form(action="#", method="POST")
+                        .row
+                            .subDweller
+                                .box(scroll="disable")
+                                    center
+                                        img#profilePic(src="#",title="Fotografia do morador.")
+                            .subDweller
+                                .box(scroll="disable")
+                                    +sectionTitle("Detalhes do morador")
+                                    .boxBody
+                                        .container-fluid
+                                            .row
+                                                .subDwellerDetails
+                                                    label.danger administrador
+                                                    label.allright contas em dia
+                                                    label.allright realizou as tarefas
+                                                    ul
+                                                        li
+                                                            p 
+                                                            strong Nome Completo:
+                                                            |  Lucas Fonseca dos Santos
+                                                        li
+                                                            p 
+                                                            strong Nascimento:
+                                                            |  13/02/1996
+                                                        li
+                                                            p 
+                                                            strong Idade:
+                                                            |  23 Anos
+                                                        li
+                                                            p 
+                                                            strong Gênero:
+                                                            |  Masculino
+                                                        li
+                                                            p 
+                                                            strong Cadastro de Pessoa Física (CPF):
+                                                            |  425.524.498-75
+                                                        li
+                                                            p 
+                                                            strong Registro Geral (RG):
+                                                            |  129.288.019
+                                                        li
+                                                            p 
+                                                            strong Curso:
+                                                            |  Bacharelado em Ciência da Computação
+                                                        li
+                                                            p 
+                                                            strong Apelido:
+                                                            |  Incêndiário
+                                                .subDwellerDetails
+                                                    ul
+                                                        li
+                                                            p 
+                                                            strong Telefones:
+                                                            |  +55 (16) 99169-9662
+                                                        li
+                                                            p 
+                                                            strong Telefones de Familiares:
+                                                            |  +55 (16) 99169-9662
+                                                        li
+                                                            p 
+                                                            strong Problemas de Saúde:
+                                                            |  Renite Alérgica
+                                                        li
+                                                            p 
+                                                            strong E-mail:
+                                                            |  fualno@ciclano.com.br
+                                                        li
+                                                            p 
+                                                            strong Informações Adicionais:
+                                                            |  -
+        footer
+            include include/_footer.pug
+        include include/_js-imports.pug
