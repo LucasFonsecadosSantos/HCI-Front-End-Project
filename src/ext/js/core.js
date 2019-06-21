@@ -86,6 +86,24 @@ function addManualTaskDate(form) {
     document.getElementById("manualDateData").insertRow(0).insertCell(0).innerHTML = value;
 }
 
+function addDwellerDisease(form) {
+    var value = document.getElementById("disease1").value;
+    document.getElementById("dwellerDiseaseTable").insertRow(0).insertCell(0).innerHTML = value;
+    document.getElementById("disease1").value = "";
+}
+
+function addDwellerTelephone(form) {
+    var value = document.getElementById("telephone1").value;
+    document.getElementById("dwellerTelephoneTable").insertRow(0).insertCell(0).innerHTML = value;
+    document.getElementById("telephone1").value = "";
+}
+
+function addDwellerFamilyTelephone(form) {
+    var value = document.getElementById("familyTelephone").value;
+    document.getElementById("dwellerFamilyTelephoneTable").insertRow(0).insertCell(0).innerHTML = value;
+    document.getElementById("familyTelephone").value = "";
+}
+
 function addTaskDwellers(form) {
     var combo = document.getElementById("dweller");
     var dweller = combo.options[combo.selectedIndex].text;

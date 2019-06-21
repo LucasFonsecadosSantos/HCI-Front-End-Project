@@ -592,11 +592,11 @@ pre code {
 }
 
 .col-xl,
-.col-xl-auto, .col-xl-12, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, body[page=login] .box .loginHeader .subLoginHeader:last-child, #index02 .subIndex02:nth-child(2), .col-xl-7, .col-xl-6, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle, .col-xl-5, .col-xl-4, body[page=login] .box .loginHeader .subLoginHeader:first-child, #index05 .subIndex05, #index02 .subIndex02:nth-child(1), .col-xl-3, #index01 .subIndex01, .col-xl-2, .col-xl-1, .col-lg,
-.col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
-.col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm,
-.col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col,
-.col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+.col-xl-auto, .col-xl-12, body[page=account-register] .specialFormLine, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine, .col-xl-11, .col-xl-10, body[page=account-register] .subAccountRegister:nth-child(2), .col-xl-9, .col-xl-8, body[page=login] .box .loginHeader .subLoginHeader:last-child, #index02 .subIndex02:nth-child(2), .col-xl-7, .col-xl-6, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle, .col-xl-5, .col-xl-4, body[page=login] .box .loginHeader .subLoginHeader:first-child, #index05 .subIndex05, #index02 .subIndex02:nth-child(1), .col-xl-3, #index01 .subIndex01, .col-xl-2, body[page=account-register] .subAccountRegister:nth-child(1), .col-xl-1, .col-lg,
+.col-lg-auto, .col-lg-12, body[page=account-register] .specialFormLine, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, body[page=account-register] .subAccountRegisterForm, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
+.col-md-auto, .col-md-12, body[page=account-register] .specialFormLine, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, body[page=account-register] .subAccountRegisterForm, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm,
+.col-sm-auto, .col-sm-12, body[page=account-register] .specialFormLine, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, body[page=account-register] .subAccountRegisterForm, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col,
+.col-auto, .col-12, body[page=account-register] .specialFormLine, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, body[page=account-register] .subAccountRegisterForm, .col-5, .col-4, .col-3, .col-2, .col-1 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -620,7 +620,7 @@ pre code {
   max-width: 8.3333333333%;
 }
 
-.col-2 {
+.col-2, body[page=account-register] .subAccountRegister:nth-child(1) {
   flex: 0 0 16.6666666667%;
   max-width: 16.6666666667%;
 }
@@ -640,7 +640,7 @@ pre code {
   max-width: 41.6666666667%;
 }
 
-.col-6, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle {
+.col-6, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle {
   flex: 0 0 50%;
   max-width: 50%;
 }
@@ -660,7 +660,7 @@ pre code {
   max-width: 75%;
 }
 
-.col-10 {
+.col-10, body[page=account-register] .subAccountRegister:nth-child(2) {
   flex: 0 0 83.3333333333%;
   max-width: 83.3333333333%;
 }
@@ -670,7 +670,7 @@ pre code {
   max-width: 91.6666666667%;
 }
 
-.col-12, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine {
+.col-12, body[page=account-register] .specialFormLine, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -797,7 +797,7 @@ pre code {
     max-width: 8.3333333333%;
   }
 
-  .col-sm-2 {
+  .col-sm-2, body[page=account-register] .subAccountRegister:nth-child(1) {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
@@ -817,7 +817,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-sm-6, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle {
+  .col-sm-6, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -837,7 +837,7 @@ pre code {
     max-width: 75%;
   }
 
-  .col-sm-10 {
+  .col-sm-10, body[page=account-register] .subAccountRegister:nth-child(2) {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
@@ -847,7 +847,7 @@ pre code {
     max-width: 91.6666666667%;
   }
 
-  .col-sm-12, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine {
+  .col-sm-12, body[page=account-register] .specialFormLine, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -978,7 +978,7 @@ pre code {
     max-width: 8.3333333333%;
   }
 
-  .col-md-2 {
+  .col-md-2, body[page=account-register] .subAccountRegister:nth-child(1) {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
@@ -998,7 +998,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-md-6, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle {
+  .col-md-6, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -1018,7 +1018,7 @@ pre code {
     max-width: 75%;
   }
 
-  .col-md-10 {
+  .col-md-10, body[page=account-register] .subAccountRegister:nth-child(2) {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
@@ -1028,7 +1028,7 @@ pre code {
     max-width: 91.6666666667%;
   }
 
-  .col-md-12, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine {
+  .col-md-12, body[page=account-register] .specialFormLine, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1159,7 +1159,7 @@ pre code {
     max-width: 8.3333333333%;
   }
 
-  .col-lg-2 {
+  .col-lg-2, body[page=account-register] .subAccountRegister:nth-child(1) {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
@@ -1179,7 +1179,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-lg-6, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle {
+  .col-lg-6, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -1199,7 +1199,7 @@ pre code {
     max-width: 75%;
   }
 
-  .col-lg-10 {
+  .col-lg-10, body[page=account-register] .subAccountRegister:nth-child(2) {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
@@ -1209,7 +1209,7 @@ pre code {
     max-width: 91.6666666667%;
   }
 
-  .col-lg-12, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine {
+  .col-lg-12, body[page=account-register] .specialFormLine, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1340,7 +1340,7 @@ pre code {
     max-width: 8.3333333333%;
   }
 
-  .col-xl-2 {
+  .col-xl-2, body[page=account-register] .subAccountRegister:nth-child(1) {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
@@ -1360,7 +1360,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-xl-6, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle {
+  .col-xl-6, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -1380,7 +1380,7 @@ pre code {
     max-width: 75%;
   }
 
-  .col-xl-10 {
+  .col-xl-10, body[page=account-register] .subAccountRegister:nth-child(2) {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
@@ -1390,7 +1390,7 @@ pre code {
     max-width: 91.6666666667%;
   }
 
-  .col-xl-12, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine {
+  .col-xl-12, body[page=account-register] .specialFormLine, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -9522,7 +9522,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.transitions, button:hover, button, input:focus, textarea:focus, select:focus, input:hover, textarea:hover, select:hover, input, textarea, select {
+.transitions, button:hover, button, input:focus, textarea:focus, select:focus, input:hover, textarea:hover, select:hover, input, textarea, select, label[class=fileInputLabel] {
   transition: 0.8s;
   -o-transition: 0.8s;
   -ms-transition: 0.8s;
@@ -9604,6 +9604,23 @@ label[class=allright] {
 label[class=notification] {
   background: #ff9800;
 }
+label[class=fileInputLabel] {
+  border-radius: 0.5esm;
+  -o-border-radius: 0.5esm;
+  -ms-border-radius: 0.5esm;
+  -moz-border-radius: 0.5esm;
+  -webkit-border-radius: 0.5esm;
+  border: solid 0.2em #4A00E0;
+  outline: none;
+  padding: 0.2em 1.5em;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #4A00E0;
+  color: #FAFAFA;
+}
 
 .myWrapper {
   padding: 1.5% 3% 1.5% 3%;
@@ -9637,6 +9654,10 @@ input[type=radio], input[type=checkbox], textarea[type=radio], textarea[type=che
   width: auto !important;
 }
 
+input[type=file] {
+  display: none !important;
+}
+
 button {
   border-radius: 0.5esm;
   -o-border-radius: 0.5esm;
@@ -9649,8 +9670,9 @@ button {
   padding: 0.2em 1.5em;
   cursor: pointer;
   color: #4A00E0;
+  text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.8em;
 }
 button[class=btn-blue] {
@@ -9659,8 +9681,8 @@ button[class=btn-blue] {
   color: #FAFAFA;
 }
 button:hover {
-  border-color: #8E2DE2;
-  color: #8E2DE2;
+  background-color: #8E2DE2;
+  color: #FFF;
 }
 
 .box {
@@ -10167,6 +10189,29 @@ body[page=task-register] .subTaskRegisterForm input {
   margin-bottom: 0px !important;
 }
 body[page=task-register] .subTaskRegisterForm p {
+  color: #424242;
+  font-size: 0.8em;
+}
+
+body[page=account-register] .subAccountRegister {
+  display: flex;
+}
+body[page=account-register] .registerFormLine, body[page=account-register] .specialFormLine {
+  margin-bottom: 2em;
+}
+body[page=account-register] .registerFormLine button, body[page=account-register] .specialFormLine button {
+  margin-right: 1em;
+}
+body[page=account-register] #profilePic {
+  border: solid 1px #5659A6;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2em;
+}
+body[page=account-register] .subAccountRegisterForm input {
+  margin-bottom: 0px !important;
+}
+body[page=account-register] .subAccountRegisterForm p {
   color: #424242;
   font-size: 0.8em;
 }

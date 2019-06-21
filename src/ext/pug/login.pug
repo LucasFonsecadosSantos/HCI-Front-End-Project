@@ -36,56 +36,12 @@
 doctype html
 html
     head
+        include include/_mixins.pug
         //----------------------------[METAS]----------------------------//
-        title myRepublic - Login
-        meta(charset="utf-8")
-        meta(name="keywords", content="")
-        meta(http-equiv="content-type", content="text/html; charset=UTF-8")
-        meta(name="robot", content="index")
-        meta(name="googlebot", content="index")
-        meta(name="google", content="nositelinkscd searchbox")
-        meta(name="author", content="Lucas Fonseca dos Santos")
-        meta(name="myRepublic - Login")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
-        meta(name="revisit-after", content="7 days")
-        meta(name="copyright", content="LCF COMPANY, Inc. 2019")
-        meta(name="rating", content="general")
-        meta(name="distribution", content="global")
-        meta(name="language", content="pt")
-        meta(http-equiv="content-language", content="pt-br")
-        meta(name="MobileOptimized", content="320")
-        meta(http-equiv="imagetoolbar", content="no")
-        meta(http-equiv="content-script-type", content="text/javascript")
-        meta(http-equiv="content-style-type", content="text/css")
-        meta(name="DC.title", content="myRepublic - Login")
-        meta(name="DC.creator", content="Lucas Fonseca dos Santos")
-        meta(name="DC.creator.address", content="null")
-        meta(name="DC.description", content="")
-        meta(name="DC.publisher", content="null")
-        meta(name="DC.format", content="text/html")
-        meta(itemprop="name", content="myRepublic - Login")
-        meta(itemprop="description", content="null")
-        meta(itemprop="image", content="")
-        meta(name="theme-color", content="")
-        meta(name="msapplication-TileColor", content="#5659A6")
-        meta(name="msapplication-TileImage", content="img/favicon/ms-icon-144x144.png")
+        +headerSettings("myRepublic - Login.","None description.","myRepublic","#5659A6")
         //---------------------------------------------------------------//
         //---------------------------[IMPORTS]---------------------------//
-        link(rel="stylesheet", href="ext/css/core.css")
-        link(rel="apple-touch-icon", sizes="57x57", href="img/favicon/apple-icon-57x57.png")
-        link(rel="apple-touch-icon", sizes="60x60", href="img/favicon/apple-icon-60x60.png")
-        link(rel="apple-touch-icon", sizes="72x72", href="img/favicon/apple-icon-72x72.png")
-        link(rel="apple-touch-icon", sizes="76x76", href="img/favicon/apple-icon-76x76.png")
-        link(rel="apple-touch-icon", sizes="114x114", href="img/favicon/apple-icon-114x114.png")
-        link(rel="apple-touch-icon", sizes="120x120", href="img/favicon/apple-icon-120x120.png")
-        link(rel="apple-touch-icon", sizes="144x144", href="img/favicon/apple-icon-144x144.png")
-        link(rel="apple-touch-icon", sizes="152x152", href="img/favicon/apple-icon-152x152.png")
-        link(rel="apple-touch-icon", sizes="180x180", href="img/favicon/apple-icon-180x180.png")
-        link(rel="icon", type="image/png", sizes="192x192", href="img/favicon/android-icon-192x192.png")
-        link(rel="icon", type="image/png", sizes="32x32", href="img/favicon/favicon-32x32.png")
-        link(rel="icon", type="image/png", sizes="96x96", href="img/favicon/favicon-96x96.png")
-        link(rel="icon", type="image/png", sizes="16x16", href="img/favicon/favicon-16x16.png")
-        link(rel="manifest", href="img/favicon/manifest.json")
+        include include/_link-imports.pug
         //---------------------------------------------------------------//
     body(page="login")
         section
@@ -99,4 +55,4 @@ html
                     input(name="user",type="email" placeholder="Usuário", title="Insira seu usuário aqui. Ex. João da Silva", alt="Campo para inserir o usuário.")
                     input(name="password",type="password", placeholder="Senha", title="Insira sua senha aqui.", alt="Campo para inserir a senha.")
                     button(type="button",onclick="loginSimulation(this.form);", title="Clique para acessar sua conta.", alt="Botão para acessar sua conta.") Acessar
-    script(src="ext/js/core.js")
+    include include/_js-imports.pug
