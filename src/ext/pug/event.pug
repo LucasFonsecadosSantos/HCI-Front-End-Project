@@ -1,0 +1,157 @@
+// DEVELOPED BY: Lucas Fonseca dos Santos
+///////////////////////////////////////////////////////////////////////////////////
+///                                                                             ///
+/// [PROJECT]: Name: null                                                       ///
+///            URL:  null                                                       ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+/// [DEVELOPMENT]:  Code Developer:   Lucas Fonseca dos Santos.                 ///
+///                 System Developer: Lucas Fonseca dos Santos.                 ///
+///                 Design Creater:   Lucas Fonseca dos Santos.                 ///
+///                 Tester:           Lucas Fonseca dos Santos.                 ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+/// [INFORMATIONS]: Fonts:  Ubuntu, 300, 400, 500, 700                          ///
+///                         Open Sans, 300, 400, 600, 700                       ///
+///                         Open Sans Condensed, 300, 700                       ///
+///                 Colors: #000000                                             ///
+///                         #000000                                             ///
+///                         #000000                                             ///
+///                         #000000                                             ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+///   Use .content to write class .container by bootstrap and .line to write    ///
+///   .row class by bootstrap.                                                  ///
+///                                                                             ///
+///   Use mixin extend_grid() with the params: LG value, MD value, SM value,    ///
+///   XS value in respective order to extend grid system of bootstrap.          ///
+///                                                                             ///
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///                              FILE INFORMATION                               ///
+///-----------------------------------------------------------------------------///
+/// [NAME]: Core                                                                ///
+/// [CONTENT]: Responsible for all front end struct.                            ///
+///////////////////////////////////////////////////////////////////////////////////
+doctype html
+html
+    head
+        include include/_mixins.pug
+        //----------------------------[METAS]----------------------------//
+        +headerSettings("myRepublic - Detalhes do Evento","None description.","myRepublic","#5659A6")
+        //---------------------------------------------------------------//
+        //---------------------------[IMPORTS]---------------------------//
+        include include/_link-imports.pug
+        //---------------------------------------------------------------//
+    body(page="event")
+        header
+            include include/_header.pug
+            +republicBanner("incendiaria","Detalhes do Evento")
+        main
+            section
+                .myWrapper
+                    +pageTitle("", "Detalhes do Evento")
+                    form(action="#", method="POST")
+                        .row
+                            .subEvent
+                                .container
+                                    .row
+                                        +makeBox("disable","","")
+                                            center.row
+                                                img#eventPic(src="#",title="Sua fotografia escolhida.")
+                                        +makeBox("disable","Data do Evento","")
+                                            center#eventDay
+                                                h1 13
+                                                p maio
+                                        +makeBox("disable","Data do Evento","")
+                                            center#eventDay
+                                                h1 13
+                                                p maio
+                            .subEvent
+                                - var statusArray = [{"text": "programado","class": "attention"},{"text": "autorizado","class": "allright"}];
+                                +makeBox("disable","Detalhes do Evento",statusArray)
+                                    ul
+                                        li
+                                            p 
+                                            strong Titulo:
+                                            |  Churrascada de sexta
+                                        li
+                                            p 
+                                            strong Data:
+                                            |  13/02/1996
+                                        li
+                                            p 
+                                            strong Website:
+                                            |  -
+                                        li
+                                            p 
+                                            strong E-mail:
+                                            |  -
+                                        li
+                                            p 
+                                            strong Página do Facebook:
+                                            |  -
+                                        li
+                                            p 
+                                            strong Investimento:
+                                            |  R$ 320.00
+                                        li
+                                            p 
+                                            strong Quantidade de Pessoas Esperadas:
+                                            |  15 pessoas
+                            .subEvent
+                                .box(scroll="disable")
+                                    +sectionTitle("Tarefas delagadas ao morador")
+                                    table.data#EventTable1
+                                        thead
+                                            tr
+                                                td
+                                                    p Icone
+                                                td
+                                                    p Tarefa
+                                                td
+                                                    p data
+                                                td
+                                                    p status
+                                        tbody
+                                            tr
+                                                td
+                                                    img.icon(src="img/elements/icons/cleaning.svg")
+                                                td
+                                                    p Limpar a casa
+                                                td
+                                                    p 15/05
+                                                td
+                                                    label.danger não executado
+                                            tr
+                                                td
+                                                    img.icon(src="img/elements/icons/cleaning.svg")
+                                                td
+                                                    p Limpar a casa
+                                                td
+                                                    p 15/05
+                                                td
+                                                    label.danger não executado
+                                            tr
+                                                td
+                                                    img.icon(src="img/elements/icons/cleaning.svg")
+                                                td
+                                                    p Limpar a casa
+                                                td
+                                                    p 15/05
+                                                td
+                                                    label.danger não executado
+                                            tr
+                                                td
+                                                    img.icon(src="img/elements/icons/cleaning.svg")
+                                                td
+                                                    p Limpar a casa
+                                                td
+                                                    p 15/05
+                                                td
+                                                    label.danger não executado
+                                                
+                                                    
+        footer
+            include include/_footer.pug
+        include include/_js-imports.pug

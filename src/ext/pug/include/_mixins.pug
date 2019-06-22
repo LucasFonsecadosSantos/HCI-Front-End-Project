@@ -51,3 +51,18 @@ mixin headerSettings(title, description, author, themeColor)
     meta(name="theme-color", content= themeColor)
     meta(name="msapplication-TileColor", content= themeColor)
     meta(name="msapplication-TileImage", content="img/favicon/ms-icon-144x144.png")
+
+mixin makeBox(scrollOption, sectionTitle, status)
+    .box(scroll= scrollOption)
+        if sectionTitle
+            +sectionTitle(sectionTitle)
+        if status
+            .boxStatusHeader
+                each statusLabel in status
+                    label(class= statusLabel.class )= statusLabel.text
+            .boxBody.container-fluid
+                block
+        else
+            .boxBody.container-fluid
+                block
+            

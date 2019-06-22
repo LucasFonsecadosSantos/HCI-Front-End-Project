@@ -592,11 +592,11 @@ pre code {
 }
 
 .col-xl,
-.col-xl-auto, .col-xl-12, body[page=account-register] .specialFormLine, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine, .col-xl-11, .col-xl-10, body[page=dweller] .subDweller:nth-child(2), body[page=account-register] .subAccountRegister:nth-child(2), .col-xl-9, .col-xl-8, body[page=login] .box .loginHeader .subLoginHeader:last-child, #index02 .subIndex02:nth-child(2), .col-xl-7, .col-xl-6, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle, .col-xl-5, .col-xl-4, body[page=dweller] .subDweller2, body[page=login] .box .loginHeader .subLoginHeader:first-child, #index05 .subIndex05, #index02 .subIndex02:nth-child(1), .col-xl-3, #index01 .subIndex01, .col-xl-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1), .col-xl-1, .col-lg,
-.col-lg-auto, .col-lg-12, body[page=account-register] .specialFormLine, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-lg-5, .col-lg-4, body[page=dweller] .subDweller2, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
-.col-md-auto, .col-md-12, body[page=account-register] .specialFormLine, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-md-5, .col-md-4, body[page=dweller] .subDweller2, .col-md-3, .col-md-2, .col-md-1, .col-sm,
-.col-sm-auto, .col-sm-12, body[page=account-register] .specialFormLine, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-sm-5, .col-sm-4, body[page=dweller] .subDweller2, .col-sm-3, .col-sm-2, .col-sm-1, .col,
-.col-auto, .col-12, body[page=account-register] .specialFormLine, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-5, .col-4, body[page=dweller] .subDweller2, .col-3, .col-2, .col-1 {
+.col-xl-auto, .col-xl-12, body[page=account-register] .specialFormLine, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine, .col-xl-11, .col-xl-10, body[page=dweller] .subDweller:nth-child(2), body[page=account-register] .subAccountRegister:nth-child(2), .col-xl-9, .col-xl-8, body[page=login] .box .loginHeader .subLoginHeader:last-child, #index02 .subIndex02:nth-child(2), .col-xl-7, .col-xl-6, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, #index03 .subIndex03, .pageTitle .subPageTitle, .col-xl-5, body[page=event] .subEvent:nth-child(3), body[page=event] .subEvent:nth-child(2), .col-xl-4, body[page=dweller] .subDweller2, body[page=login] .box .loginHeader .subLoginHeader:first-child, #index05 .subIndex05, #index02 .subIndex02:nth-child(1), .col-xl-3, #index01 .subIndex01, .col-xl-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1), body[page=event] .subEvent:nth-child(1), .col-xl-1, .col-lg,
+.col-lg-auto, .col-lg-12, body[page=account-register] .specialFormLine, .col-lg-11, .col-lg-10, body[page=dweller] .subDweller:nth-child(2), .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-lg-5, .col-lg-4, body[page=dweller] .subDweller2, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
+.col-md-auto, .col-md-12, body[page=account-register] .specialFormLine, .col-md-11, .col-md-10, body[page=dweller] .subDweller:nth-child(2), .col-md-9, .col-md-8, .col-md-7, .col-md-6, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-md-5, .col-md-4, body[page=dweller] .subDweller2, .col-md-3, .col-md-2, .col-md-1, .col-sm,
+.col-sm-auto, .col-sm-12, body[page=account-register] .specialFormLine, .col-sm-11, .col-sm-10, body[page=dweller] .subDweller:nth-child(2), .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-sm-5, .col-sm-4, body[page=dweller] .subDweller2, .col-sm-3, .col-sm-2, .col-sm-1, .col,
+.col-auto, .col-12, body[page=account-register] .specialFormLine, .col-11, .col-10, body[page=dweller] .subDweller:nth-child(2), .col-9, .col-8, .col-7, .col-6, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-5, .col-4, body[page=dweller] .subDweller2, .col-3, .col-2, .col-1 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -620,7 +620,7 @@ pre code {
   max-width: 8.3333333333%;
 }
 
-.col-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1) {
+.col-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1), body[page=event] .subEvent:nth-child(1) {
   flex: 0 0 16.6666666667%;
   max-width: 16.6666666667%;
 }
@@ -635,7 +635,7 @@ pre code {
   max-width: 33.3333333333%;
 }
 
-.col-5 {
+.col-5, body[page=event] .subEvent:nth-child(3), body[page=event] .subEvent:nth-child(2) {
   flex: 0 0 41.6666666667%;
   max-width: 41.6666666667%;
 }
@@ -797,7 +797,7 @@ pre code {
     max-width: 8.3333333333%;
   }
 
-  .col-sm-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1) {
+  .col-sm-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1), body[page=event] .subEvent:nth-child(1) {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
@@ -812,7 +812,7 @@ pre code {
     max-width: 33.3333333333%;
   }
 
-  .col-sm-5 {
+  .col-sm-5, body[page=event] .subEvent:nth-child(3), body[page=event] .subEvent:nth-child(2) {
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
@@ -978,7 +978,7 @@ pre code {
     max-width: 8.3333333333%;
   }
 
-  .col-md-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1) {
+  .col-md-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1), body[page=event] .subEvent:nth-child(1) {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
@@ -993,7 +993,7 @@ pre code {
     max-width: 33.3333333333%;
   }
 
-  .col-md-5 {
+  .col-md-5, body[page=event] .subEvent:nth-child(3), body[page=event] .subEvent:nth-child(2) {
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
@@ -1159,7 +1159,7 @@ pre code {
     max-width: 8.3333333333%;
   }
 
-  .col-lg-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1) {
+  .col-lg-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1), body[page=event] .subEvent:nth-child(1) {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
@@ -1174,7 +1174,7 @@ pre code {
     max-width: 33.3333333333%;
   }
 
-  .col-lg-5 {
+  .col-lg-5, body[page=event] .subEvent:nth-child(3), body[page=event] .subEvent:nth-child(2) {
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
@@ -1340,7 +1340,7 @@ pre code {
     max-width: 8.3333333333%;
   }
 
-  .col-xl-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1) {
+  .col-xl-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1), body[page=event] .subEvent:nth-child(1) {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
@@ -1355,7 +1355,7 @@ pre code {
     max-width: 33.3333333333%;
   }
 
-  .col-xl-5 {
+  .col-xl-5, body[page=event] .subEvent:nth-child(3), body[page=event] .subEvent:nth-child(2) {
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
@@ -9692,6 +9692,17 @@ button:hover {
   width: 100%;
   overflow-y: hidden;
 }
+.box .boxStatusHeader {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+.box .boxStatusHeader label {
+  margin-right: 1em;
+}
+.box .boxBody {
+  width: 100%;
+  box-sizing: border-box;
+}
 .box:hover[scroll=enable] {
   overflow-y: scroll;
 }
@@ -10193,6 +10204,78 @@ body[page=task-register] .subTaskRegisterForm p {
   font-size: 0.8em;
 }
 
+body[page=event] .subEvent {
+  display: flex;
+}
+body[page=event] .subEvent:nth-child(1) .box {
+  margin-bottom: 2em;
+}
+body[page=event] .subEvent:nth-child(1) .box:last-child {
+  margin: 0px;
+}
+body[page=event] #eventPic {
+  border: solid 1px #5659A6;
+  width: 100%;
+  height: 100%;
+}
+body[page=event] #eventDay h1 {
+  font-size: 10em !important;
+  font-weight: 900 !important;
+  margin: 0px !important;
+}
+body[page=event] #eventDay p {
+  color: #4A00E0;
+  margin: 0px !important;
+  margin-top: -0.5em !important;
+  font-size: 1.5em !important;
+}
+body[page=event] .boxBody {
+  width: 100%;
+  box-sizing: border-box;
+}
+body[page=event] #EventTable1 thead tr td:nth-child(1), body[page=event] #EventTable1 tbody tr td:nth-child(1) {
+  width: 10%;
+}
+body[page=event] #EventTable1 thead tr td:nth-child(2), body[page=event] #EventTable1 tbody tr td:nth-child(2) {
+  width: 30%;
+}
+body[page=event] #EventTable1 thead tr td:nth-child(3), body[page=event] #EventTable1 tbody tr td:nth-child(3) {
+  width: 30%;
+  text-align: center;
+}
+body[page=event] #EventTable1 thead tr td:nth-child(4), body[page=event] #EventTable1 tbody tr td:nth-child(4) {
+  width: 30%;
+  text-align: center;
+}
+body[page=event] #EventTable2 thead tr td:nth-child(1), body[page=event] #EventTable2 tbody tr td:nth-child(1) {
+  width: 10%;
+}
+body[page=event] #EventTable2 thead tr td:nth-child(2), body[page=event] #EventTable2 tbody tr td:nth-child(2) {
+  width: 30%;
+}
+body[page=event] #EventTable2 thead tr td:nth-child(3), body[page=event] #EventTable2 tbody tr td:nth-child(3) {
+  width: 30%;
+  text-align: center;
+}
+body[page=event] #EventTable2 thead tr td:nth-child(4), body[page=event] #EventTable2 tbody tr td:nth-child(4) {
+  width: 30%;
+  text-align: center;
+}
+body[page=event] #EventTable3 thead tr td:nth-child(1), body[page=event] #EventTable3 tbody tr td:nth-child(1) {
+  width: 10%;
+}
+body[page=event] #EventTable3 thead tr td:nth-child(2), body[page=event] #EventTable3 tbody tr td:nth-child(2) {
+  width: 30%;
+}
+body[page=event] #EventTable3 thead tr td:nth-child(3), body[page=event] #EventTable3 tbody tr td:nth-child(3) {
+  width: 30%;
+  text-align: center;
+}
+body[page=event] #EventTable3 thead tr td:nth-child(4), body[page=event] #EventTable3 tbody tr td:nth-child(4) {
+  width: 30%;
+  text-align: center;
+}
+
 body[page=account-register] .subAccountRegister {
   display: flex;
 }
@@ -10219,15 +10302,11 @@ body[page=account-register] .subAccountRegisterForm p {
 body[page=dweller] .subDweller {
   display: flex;
 }
-body[page=dweller] #profilePic {
+body[page=dweller] #profilePicterter {
   border: solid 1px #5659A6;
   width: 100%;
   height: 100%;
   margin-bottom: 2em;
-}
-body[page=dweller] .boxBody {
-  width: 100%;
-  box-sizing: border-box;
 }
 body[page=dweller] .subDwellerDetails label {
   margin-right: 1em;

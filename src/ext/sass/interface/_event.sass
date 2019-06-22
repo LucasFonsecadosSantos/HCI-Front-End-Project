@@ -1,0 +1,69 @@
+body[page="event"]
+    .subEvent
+        display: flex
+        &:nth-child(1)
+            @include responsive_system(2,2,2,2,2)
+            .box
+                margin-bottom: 2em
+                &:last-child
+                    margin: 0px
+        &:nth-child(2)
+            @include responsive_system(5,5,5,5,5)
+        &:nth-child(3)
+            @include responsive_system(5,5,5,5,5)
+        .box
+            //display: block
+    #eventPic
+        border: solid 1px #5659A6
+        width: 100%
+        height: 100%
+    #eventDay
+        //padding: 2.5em 0
+        h1
+            font:
+                size:   10em    !important
+                weight: 900     !important
+            margin: 0px         !important
+        p
+            color: #4A00E0
+            margin: 0px         !important
+            margin-top: -.5em    !important
+            font:
+                size: 1.5em       !important
+    .boxBody
+        width: 100%
+        box-sizing: border-box
+
+    #EventTable1 thead tr td,#EventTable1 tbody tr td
+        &:nth-child(1)
+            width: 10%
+        &:nth-child(2)
+            width: 30%
+        &:nth-child(3)
+            width: 30%
+            text-align: center
+        &:nth-child(4)
+            width: 30%
+            text-align: center
+    #EventTable2 thead tr td,#EventTable2 tbody tr td
+        &:nth-child(1)
+            width: 10%
+        &:nth-child(2)
+            width: 30%
+        &:nth-child(3)
+            width: 30%
+            text-align: center
+        &:nth-child(4)
+            width: 30%
+            text-align: center
+    #EventTable3 thead tr td,#EventTable3 tbody tr td
+        &:nth-child(1)
+            width: 10%
+        &:nth-child(2)
+            width: 30%
+        &:nth-child(3)
+            width: 30%
+            text-align: center
+        &:nth-child(4)
+            width: 30%
+            text-align: center
