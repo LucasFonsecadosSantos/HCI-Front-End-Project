@@ -92,24 +92,38 @@ button
         @extend .transitions
         background-color: #8E2DE2
         color: #FFF
-.box
+.boxShadow
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+.preBox
     background:
         color: $__COLOR__white
     padding: 1rem
+    padding-bottom: 0px
     width: 100%
     overflow-y: hidden
+    border-right: solid 12px transparent
+    margin-bottom: 0px
     .boxStatusHeader
         text-align: left
         margin-bottom: .5em
         label
             margin-right: 1em
+.box
+    background:
+        color: $__COLOR__white
+    padding: 1rem
+    margin-top: 0px
+    padding-top: 0px
+    width: 100%
+    overflow-y: hidden
+    border-right: solid 12px transparent
     .boxBody
         width: 100%
         box-sizing: border-box
     &:hover
         &[scroll="enable"]
             overflow-y: scroll
+            border-right: 0px
         &[scroll="disable"]
             overflow-y: hidden !important
 

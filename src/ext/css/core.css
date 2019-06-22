@@ -9685,19 +9685,35 @@ button:hover {
   color: #FFF;
 }
 
-.box {
+.boxShadow {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.preBox {
   background-color: #fff;
   padding: 1rem;
+  padding-bottom: 0px;
   width: 100%;
   overflow-y: hidden;
+  border-right: solid 12px transparent;
+  margin-bottom: 0px;
 }
-.box .boxStatusHeader {
+.preBox .boxStatusHeader {
   text-align: left;
   margin-bottom: 0.5em;
 }
-.box .boxStatusHeader label {
+.preBox .boxStatusHeader label {
   margin-right: 1em;
+}
+
+.box {
+  background-color: #fff;
+  padding: 1rem;
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 100%;
+  overflow-y: hidden;
+  border-right: solid 12px transparent;
 }
 .box .boxBody {
   width: 100%;
@@ -9705,6 +9721,7 @@ button:hover {
 }
 .box:hover[scroll=enable] {
   overflow-y: scroll;
+  border-right: 0px;
 }
 .box:hover[scroll=disable] {
   overflow-y: hidden !important;
@@ -9989,7 +10006,7 @@ footer {
   height: 400px;
 }
 #index05 .subIndex05 .data {
-  width: 100%;
+  width: 100% !important;
 }
 #index05 .subIndex05 .data:nth-child(1) {
   width: 10%;

@@ -83,8 +83,7 @@ html
                 .myWrapper
                     .row
                         .subIndex02
-                            .box(scroll="enable")
-                                +sectionTitle("seus amigos moradores")
+                            +makeBox("enable","seus amigos moradores")
                                 table.data
                                     thead
                                     tbody
@@ -124,16 +123,14 @@ html
                                             td
                                                 label.information usuário
                         .subIndex02
-                            .box(scroll="disable")
-                                +sectionTitle("como andam as minhas despesas?")
-                                    canvas#expenses
+                            +makeBox("disable","como andam as minhas despesas?")
+                                canvas#expenses
             
             section#index03
                 .myWrapper
                     .row
                         .subIndex03
-                            .box(scroll="enable")
-                                +sectionTitle("o que eu preciso fazer essa semana?")
+                            +makeBox("enable","o que eu preciso fazer essa semana?")
                                 table.data
                                     thead
                                         tr
@@ -182,8 +179,7 @@ html
                                             td
                                                 label.attention agendado
                         .subIndex03
-                            .box(scroll="enable")
-                                +sectionTitle("o que andei comprando?")
+                            +makeBox("enable","O que eu andei comprando?")
                                 table.data
                                     thead
                                         tr
@@ -232,8 +228,7 @@ html
                                                 label.danger aguardando aprovação
             section#index04
                 .myWrapper
-                    .box(scroll="enable")
-                        +sectionTitle("feed de mensagens")
+                    +makeBox("enable","feed de mensagens")
                         table.data
                             thead
                                 tr
@@ -301,8 +296,7 @@ html
                 .myWrapper
                     .row
                         .subIndex05
-                            .box(scroll="enable")
-                                +sectionTitle("meus pertences")
+                            +makeBox("enable","meus pertences")
                                 table.data
                                     thead
                                         tr
@@ -335,15 +329,12 @@ html
                                             td
                                                 label.information coletivo
                         .subIndex05
-                            .box(scroll="enable")
-                                +sectionTitle("festas para este mês")
+                            +makeBox("enable","Festas para este mês")
                         .subIndex05
-                            .box
-                                +sectionTitle("outro")
+                            +makeBox("disable","outro")
             section#index06
                 .myWrapper
-                    .box
-                        +sectionTitle("calendário")
+                    +makeBox("disable","Clandário")
         footer
             include include/_footer.pug
         include include/_js-imports.pug
