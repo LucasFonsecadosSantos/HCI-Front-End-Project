@@ -51,106 +51,150 @@ html
             section
                 .myWrapper
                     +pageTitle("", "Detalhes do Evento")
-                    form(action="#", method="POST")
-                        .row
-                            .subEvent
-                                .container
-                                    .row
-                                        +makeBox("disable","","")
-                                            center.row
-                                                img#eventPic(src="#",title="Sua fotografia escolhida.")
-                                        +makeBox("disable","Data do Evento","")
-                                            center#eventDay
-                                                h1 13
-                                                p maio
-                                        +makeBox("disable","Data do Evento","")
-                                            center#eventDay
-                                                h1 13
-                                                p maio
-                            .subEvent
-                                - var statusArray = [{"text": "programado","class": "attention"},{"text": "autorizado","class": "allright"}];
-                                +makeBox("disable","Detalhes do Evento",statusArray)
-                                    ul
-                                        li
-                                            p 
-                                            strong Titulo:
-                                            |  Churrascada de sexta
-                                        li
-                                            p 
-                                            strong Data:
-                                            |  13/02/1996
-                                        li
-                                            p 
-                                            strong Website:
-                                            |  -
-                                        li
-                                            p 
-                                            strong E-mail:
-                                            |  -
-                                        li
-                                            p 
-                                            strong Página do Facebook:
-                                            |  -
-                                        li
-                                            p 
-                                            strong Investimento:
-                                            |  R$ 320.00
-                                        li
-                                            p 
-                                            strong Quantidade de Pessoas Esperadas:
-                                            |  15 pessoas
-                            .subEvent
-                                +makeBox("disable","Moradores que organizarão este evento","")
-                                    table.data#EventTable1
-                                        thead
-                                            tr
-                                                td
-                                                    p Icone
-                                                td
-                                                    p Tarefa
-                                                td
-                                                    p data
-                                                td
-                                                    p status
-                                        tbody
-                                            tr
-                                                td
-                                                    img.icon(src="img/elements/icons/cleaning.svg")
-                                                td
-                                                    p Limpar a casa
-                                                td
-                                                    p 15/05
-                                                td
-                                                    label.danger não executado
-                                            tr
-                                                td
-                                                    img.icon(src="img/elements/icons/cleaning.svg")
-                                                td
-                                                    p Limpar a casa
-                                                td
-                                                    p 15/05
-                                                td
-                                                    label.danger não executado
-                                            tr
-                                                td
-                                                    img.icon(src="img/elements/icons/cleaning.svg")
-                                                td
-                                                    p Limpar a casa
-                                                td
-                                                    p 15/05
-                                                td
-                                                    label.danger não executado
-                                            tr
-                                                td
-                                                    img.icon(src="img/elements/icons/cleaning.svg")
-                                                td
-                                                    p Limpar a casa
-                                                td
-                                                    p 15/05
-                                                td
-                                                    label.danger não executado
-                                                
-                                                    
+                    .row
+                        .subEvent
+                            +makeBox("disable","","")
+                                center.row
+                                    img#eventPic(src="img/elements/default/242x242.png",title="Sua fotografia escolhida.")
+                            +makeBox("disable","Data do Evento","")
+                                center#eventDay
+                                    h1 13
+                                    p maio
+                            +makeBox("disable","Data do Evento","")
+                                center#eventDay
+                                    h1 13
+                                    p maio
+                        .subEvent
+                            - var statusArray = [{"text": "programado","class": "attention"},{"text": "autorizado","class": "allright"}];
+                            +makeBox("disable","Detalhes do Evento",statusArray)
+                                ul
+                                    li
+                                        p 
+                                        strong Titulo:
+                                        |  Churrascada de sexta
+                                    li
+                                        p 
+                                        strong Data:
+                                        |  13/02/1996
+                                    li
+                                        p 
+                                        strong Website:
+                                        |  -
+                                    li
+                                        p 
+                                        strong E-mail:
+                                        |  -
+                                    li
+                                        p 
+                                        strong Página do Facebook:
+                                        |  -
+                                    li
+                                        p 
+                                        strong Investimento:
+                                        |  R$ 320.00
+                                    li
+                                        p 
+                                        strong Quantidade de Pessoas Esperadas:
+                                        |  15 pessoas
+                        .subEvent
+                            +makeBox("disable","Moradores que organizarão este evento","")
+                                table.data#EventTable1
+                                    thead
+                                        tr
+                                            td
+                                                p Icone
+                                            td
+                                                p Tarefa
+                                            td
+                                                p data
+                                            td
+                                                p status
+                                    tbody
+                                        tr
+                                            td
+                                                img.icon(src="img/elements/icons/cleaning.svg")
+                                            td
+                                                p Limpar a casa
+                                            td
+                                                p 15/05
+                                            td
+                                                label.danger não executado
+                                        tr
+                                            td
+                                                img.icon(src="img/elements/icons/cleaning.svg")
+                                            td
+                                                p Limpar a casa
+                                            td
+                                                p 15/05
+                                            td
+                                                label.danger não executado
+                                        tr
+                                            td
+                                                img.icon(src="img/elements/icons/cleaning.svg")
+                                            td
+                                                p Limpar a casa
+                                            td
+                                                p 15/05
+                                            td
+                                                label.danger não executado
+                                        tr
+                                            td
+                                                img.icon(src="img/elements/icons/cleaning.svg")
+                                            td
+                                                p Limpar a casa
+                                            td
+                                                p 15/05
+                                            td
+                                                label.danger não executado
+                            +makeBox("disable","Despesas relacionadas a este evento","")
+                                table.data#EventTable1
+                                    thead
+                                        tr
+                                            td
+                                                p Icone
+                                            td
+                                                p Tarefa
+                                            td
+                                                p data
+                                            td
+                                                p status
+                                    tbody
+                                        tr
+                                            td
+                                                img.icon(src="img/elements/icons/cleaning.svg")
+                                            td
+                                                p Limpar a casa
+                                            td
+                                                p 15/05
+                                            td
+                                                label.danger não executado
+                                        tr
+                                            td
+                                                img.icon(src="img/elements/icons/cleaning.svg")
+                                            td
+                                                p Limpar a casa
+                                            td
+                                                p 15/05
+                                            td
+                                                label.danger não executado
+                                        tr
+                                            td
+                                                img.icon(src="img/elements/icons/cleaning.svg")
+                                            td
+                                                p Limpar a casa
+                                            td
+                                                p 15/05
+                                            td
+                                                label.danger não executado
+                                        tr
+                                            td
+                                                img.icon(src="img/elements/icons/cleaning.svg")
+                                            td
+                                                p Limpar a casa
+                                            td
+                                                p 15/05
+                                            td
+                                                label.danger não executado
         footer
             include include/_footer.pug
         include include/_js-imports.pug

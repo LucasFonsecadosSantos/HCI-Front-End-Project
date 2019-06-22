@@ -9687,6 +9687,8 @@ button:hover {
 
 .boxShadow {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+  width: 100%;
 }
 
 .preBox {
@@ -9712,6 +9714,7 @@ button:hover {
   margin-top: 0px;
   padding-top: 0px;
   width: 100%;
+  height: 100%;
   overflow-y: hidden;
   border-right: solid 12px transparent;
 }
@@ -10221,14 +10224,20 @@ body[page=task-register] .subTaskRegisterForm p {
   font-size: 0.8em;
 }
 
-body[page=event] .subEvent {
+body[page=event] .subEvent:nth-child(1) .boxShadow {
+  margin-bottom: 2em !important;
+}
+body[page=event] .subEvent:nth-child(1) .boxShadow:last-child {
+  margin-bottom: 0px !important;
+}
+body[page=event] .subEvent:nth-child(2) {
   display: flex;
 }
-body[page=event] .subEvent:nth-child(1) .box {
-  margin-bottom: 2em;
+body[page=event] .subEvent:nth-child(3) .boxShadow {
+  margin-bottom: 2em !important;
 }
-body[page=event] .subEvent:nth-child(1) .box:last-child {
-  margin: 0px;
+body[page=event] .subEvent:nth-child(3) .boxShadow:last-child {
+  margin-bottom: 0px !important;
 }
 body[page=event] #eventPic {
   border: solid 1px #5659A6;
@@ -10245,10 +10254,6 @@ body[page=event] #eventDay p {
   margin: 0px !important;
   margin-top: -0.5em !important;
   font-size: 1.5em !important;
-}
-body[page=event] .boxBody {
-  width: 100%;
-  box-sizing: border-box;
 }
 body[page=event] #EventTable1 thead tr td:nth-child(1), body[page=event] #EventTable1 tbody tr td:nth-child(1) {
   width: 10%;
@@ -10293,9 +10298,6 @@ body[page=event] #EventTable3 thead tr td:nth-child(4), body[page=event] #EventT
   text-align: center;
 }
 
-body[page=account-register] .subAccountRegister {
-  display: flex;
-}
 body[page=account-register] .registerFormLine, body[page=account-register] .specialFormLine {
   margin-bottom: 2em;
 }
@@ -10316,7 +10318,7 @@ body[page=account-register] .subAccountRegisterForm p {
   font-size: 0.8em;
 }
 
-body[page=dweller] .subDweller {
+body[page=dweller] .subDweller:nth-child(1) {
   display: flex;
 }
 body[page=dweller] #profilePic {
