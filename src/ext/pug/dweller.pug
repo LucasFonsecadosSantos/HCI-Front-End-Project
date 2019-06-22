@@ -53,80 +53,71 @@ html
                     +pageTitle("", "Detalhes do Morador")
                     form(action="#", method="POST")
                         .row
+                            .subDweller.pic
+                                +makeBox("disable")
+                                    img#profilePic(src="img/elements/default/242x242.png",title="Fotografia do morador.")
                             .subDweller
-                                .box(scroll="disable")
-                                    center
-                                        img#profilePic(src="img/elements/default/242x242.png",title="Fotografia do morador.")
-                            .subDweller
-                                .box(scroll="disable")
-                                    +sectionTitle("Detalhes do morador")
-                                    .boxBody
-                                        .container-fluid
-                                            .row
-                                                .subDwellerDetails
-                                                    label.danger administrador
-                                                    label.allright contas em dia
-                                                    label.allright realizou as tarefas
-                                                    ul
-                                                        li
-                                                            p 
-                                                            strong Nome Completo:
-                                                            |  Lucas Fonseca dos Santos
-                                                        li
-                                                            p 
-                                                            strong Nascimento:
-                                                            |  13/02/1996
-                                                        li
-                                                            p 
-                                                            strong Idade:
-                                                            |  23 Anos
-                                                        li
-                                                            p 
-                                                            strong Gênero:
-                                                            |  Masculino
-                                                        li
-                                                            p 
-                                                            strong Cadastro de Pessoa Física (CPF):
-                                                            |  425.524.498-75
-                                                        li
-                                                            p 
-                                                            strong Registro Geral (RG):
-                                                            |  129.288.019
-                                                        li
-                                                            p 
-                                                            strong Curso:
-                                                            |  Bacharelado em Ciência da Computação
-                                                        li
-                                                            p 
-                                                            strong Apelido:
-                                                            |  Incêndiário
-                                                .subDwellerDetails
-                                                    ul
-                                                        li
-                                                            p 
-                                                            strong Telefones:
-                                                            |  +55 (16) 99169-9662
-                                                        li
-                                                            p 
-                                                            strong Telefones de Familiares:
-                                                            |  +55 (16) 99169-9662
-                                                        li
-                                                            p 
-                                                            strong Problemas de Saúde:
-                                                            |  Renite Alérgica
-                                                        li
-                                                            p 
-                                                            strong E-mail:
-                                                            |  fualno@ciclano.com.br
-                                                        li
-                                                            p 
-                                                            strong Informações Adicionais:
-                                                            |  -
+                                - var statusArray = [{"text":"administrador","class":"danger"},{"text":"contas em dia","class":"allright"},{"text":"realizou suas tarefas","class":"allright"}];
+                                +makeBox("disable","Detalhes do morador",statusArray)
+                                    .row
+                                        ul.subDwellerDetails
+                                            li
+                                                p 
+                                                strong Nome Completo:
+                                                |  Lucas Fonseca dos Santos
+                                            li
+                                                p 
+                                                strong Nascimento:
+                                                |  13/02/1996
+                                            li
+                                                p 
+                                                strong Idade:
+                                                |  23 Anos
+                                            li
+                                                p 
+                                                strong Gênero:
+                                                |  Masculino
+                                            li
+                                                p 
+                                                strong Cadastro de Pessoa Física (CPF):
+                                                |  425.524.498-75
+                                            li
+                                                p 
+                                                strong Registro Geral (RG):
+                                                |  129.288.019
+                                            li
+                                                p 
+                                                strong Curso:
+                                                |  Bacharelado em Ciência da Computação
+                                            li
+                                                p 
+                                                strong Apelido:
+                                                |  Incêndiário
+                                        ul.subDwellerDetails
+                                            li
+                                                p 
+                                                strong Telefones:
+                                                |  +55 (16) 99169-9662
+                                            li
+                                                p 
+                                                strong Telefones de Familiares:
+                                                |  +55 (16) 99169-9662
+                                            li
+                                                p 
+                                                strong Problemas de Saúde:
+                                                |  Renite Alérgica
+                                            li
+                                                p 
+                                                strong E-mail:
+                                                |  fualno@ciclano.com.br
+                                            li
+                                                p 
+                                                strong Informações Adicionais:
+                                                |  -
                             .container-fluid
                                 .row
                                     .subDweller2
-                                        .box(scroll="disable")
-                                            +sectionTitle("Tarefas delagadas ao morador")
+                                        +makeBox("disable","Tarefas delegadas ao morador")
                                             table.data#dwellerTable1
                                                 thead
                                                     tr
@@ -177,8 +168,7 @@ html
                                                             label.danger não executado
                                                     
                                     .subDweller2
-                                        .box(scroll="disable")
-                                            +sectionTitle("Pertences Registrados")
+                                        +makeBox("disable","Pertences registrados")
                                             table.data#dwellerTable2
                                                 thead
                                                     tr
@@ -229,8 +219,7 @@ html
                                                             label.danger não executado
                                     
                                     .subDweller2
-                                        .box(scroll="disable")
-                                            +sectionTitle("Despesas Comuns Registradas")
+                                        +makeBox("disable","Despesas comuns registradas")
                                             table.data#dwellerTable3
                                                 thead
                                                     tr

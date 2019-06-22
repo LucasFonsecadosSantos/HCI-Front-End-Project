@@ -10302,11 +10302,9 @@ body[page=account-register] .subAccountRegisterForm p {
 body[page=dweller] .subDweller {
   display: flex;
 }
-body[page=dweller] #profilePicterter {
-  border: solid 1px #5659A6;
+body[page=dweller] #profilePic {
   width: 100%;
   height: 100%;
-  margin-bottom: 2em;
 }
 body[page=dweller] .subDwellerDetails label {
   margin-right: 1em;
