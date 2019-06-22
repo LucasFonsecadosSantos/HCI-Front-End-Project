@@ -54,14 +54,13 @@ html
                     form(action="#", method="POST")
                         .row
                             .subAccountRegister
-                                .box(scroll="disable")
+                                +makeBox("disable")
                                     center
                                         img#profilePic(src="#",title="Sua fotografia escolhida.")
                                         label.fileInputLabel(for="profilePicSelection") Selecionar uma Foto
                                         input#profilePicSelection(type="file")
                             .subAccountRegister                                
-                                .box(scroll="disable")
-                                    +sectionTitle("preencha o formulário a seguir")
+                                +makeBox("disable","Preencha o formulário a seguir")
                                     .row.registerFormLine
                                         .subAccountRegisterForm
                                             input(type="text", required, name="name", placeholder="Nome completo", title="Qual é seu nome completo? Informe neste campo. Ex.: Fulano Ciclano da Silva", alt="Campo para inserir seu nome completo.")
