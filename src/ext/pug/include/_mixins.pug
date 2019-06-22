@@ -67,4 +67,11 @@ mixin makeBox(scrollOption, sectionTitle, status)
             else
                 .boxBody
                     block
-            
+
+mixin makeInformCard(iconPath,title,subTitle)
+    .informCard
+        .subInformCard
+            img(src= iconPath)
+        .subInformCard
+            h3= title
+            p= subTitle

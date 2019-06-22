@@ -52,33 +52,13 @@ html
                     +sectionTitle("informações")
                     .row
                         .subIndex01
-                            .informCard
-                                .subInformCard
-                                    img(src="img/elements/avatar.jpg")
-                                .subInformCard
-                                    p Seja bem vindo novamente,
-                                    h3 Fulano da Silva
+                            +makeInformCard("img/elements/avatar.jpg","Seja bem vindo","fualno da silva")
                         .subIndex01
-                            .informCard
-                                .subInformCard
-                                    img(src="img/elements/icons/pay.svg")
-                                .subInformCard
-                                    h3 R$ 600.00
-                                    p balanço atual
+                            +makeInformCard("img/elements/icons/pay.svg","R$ 600.00","balanço atual")
                         .subIndex01
-                            .informCard
-                                .subInformCard
-                                    img(src="img/elements/icons/money-bag.svg")
-                                .subInformCard
-                                    h3 R$ 109.90
-                                    P crédito atual
+                            +makeInformCard("img/elements/icons/money-bag.svg","R$ 109.90","crédito atual")
                         .subIndex01
-                            .informCard
-                                .subInformCard
-                                    img(src="img/elements/icons/debt.svg")
-                                .subInformCard
-                                    h3 R$ 400.00
-                                    p dívida atual
+                            +makeInformCard("img/elements/icons/debt.svg","R$ 400.00","dívida atual")
             section#index02
                 .myWrapper
                     .row
