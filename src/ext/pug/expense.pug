@@ -1,0 +1,243 @@
+// DEVELOPED BY: Lucas Fonseca dos Santos
+///////////////////////////////////////////////////////////////////////////////////
+///                                                                             ///
+/// [PROJECT]: Name: null                                                       ///
+///            URL:  null                                                       ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+/// [DEVELOPMENT]:  Code Developer:   Lucas Fonseca dos Santos.                 ///
+///                 System Developer: Lucas Fonseca dos Santos.                 ///
+///                 Design Creater:   Lucas Fonseca dos Santos.                 ///
+///                 Tester:           Lucas Fonseca dos Santos.                 ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+/// [INFORMATIONS]: Fonts:  Ubuntu, 300, 400, 500, 700                          ///
+///                         Open Sans, 300, 400, 600, 700                       ///
+///                         Open Sans Condensed, 300, 700                       ///
+///                 Colors: #000000                                             ///
+///                         #000000                                             ///
+///                         #000000                                             ///
+///                         #000000                                             ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+///   Use .content to write class .container by bootstrap and .line to write    ///
+///   .row class by bootstrap.                                                  ///
+///                                                                             ///
+///   Use mixin extend_grid() with the params: LG value, MD value, SM value,    ///
+///   XS value in respective order to extend grid system of bootstrap.          ///
+///                                                                             ///
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///                              FILE INFORMATION                               ///
+///-----------------------------------------------------------------------------///
+/// [NAME]: Core                                                                ///
+/// [CONTENT]: Responsible for all front end struct.                            ///
+///////////////////////////////////////////////////////////////////////////////////
+doctype html
+html
+    head
+        include include/_mixins.pug
+        //----------------------------[METAS]----------------------------//
+        +headerSettings("myRepublic - Detalhes da Despesa","None description.","myRepublic","#5659A6")
+        //---------------------------------------------------------------//
+        //---------------------------[IMPORTS]---------------------------//
+        include include/_link-imports.pug
+        //---------------------------------------------------------------//
+    body(page="expense")
+        header
+            include include/_header.pug
+            +republicBanner("incendiaria","Detalhes da Despesa")
+        main
+            section
+                .myWrapper
+                    +pageTitle("", "Detalhes da Despesa")
+                    .row.informCardRow
+                        .informCardContainer
+                            +makeInformCard("img/elements/icons/bill.svg","bg-indigo","Tipo","Conta de Energia")
+                        .informCardContainer
+                            +makeInformCard("img/elements/icons/pay2.svg","bg-indigo","Beneficiário","CEMIG")
+                        .informCardContainer
+                            +makeInformCard("img/elements/icons/money.svg","bg-indigo","Realizado por","Fulano Ciclano da Silva")
+                    .row
+                        .subExpense
+                            .container
+                                .row
+                                    +makeBox("disable","Total","")
+                                        center#expenseValue
+                                            h1
+                                                span R$ 
+                                                | 15.00
+                                    +makeBox("disable","Realização","")
+                                        center#expenseDay
+                                            h1 13
+                                            p maio
+                        .subExpense
+                            - var statusArray = [{"text": "aguardando aprovação","class": "attention"},{"text": "aprovado","class": "allright"},{"text": "desaprovado","class": "danger"}];
+                            +makeBox("disable","Detalhes da Despesa",statusArray)
+                                ul
+                                    li
+                                        p 
+                                        strong Titulo:
+                                        |  Energia
+                                    li
+                                        p 
+                                        strong Data:
+                                        |  13/02/1996
+                                    li
+                                        p 
+                                        strong Tipo:
+                                        |  Conta de Energia
+                                    li
+                                        p 
+                                        strong Beneficiário:
+                                        |  CEMIG
+                                    li
+                                        p 
+                                        strong Valor:
+                                        |  13/02/1996
+                                    li
+                                        p 
+                                        strong Website:
+                                        |  -
+                                    li
+                                        p 
+                                        strong E-mail:
+                                        |  -
+                                    li
+                                        p 
+                                        strong Página do Facebook:
+                                        |  -
+                                    li
+                                        p 
+                                        strong Investimento:
+                                        |  R$ 320.00
+                                    li
+                                        p 
+                                        strong Quantidade de Pessoas Esperadas:
+                                        |  15 pessoas
+                        .subExpense
+                            +makeBox("disable","Itens Registrados","")
+                                table.data#expenseTable1
+                                    thead
+                                        tr
+                                            td
+                                                p Item
+                                            td
+                                                p Valor
+                                            td
+                                                p Status
+                                    tbody
+                                        tr
+                                            td
+                                                p Esponja Star Lux
+                                            td
+                                                p R$ 15.00
+                                            td
+                                                label.allright aprovado
+                                        tr
+                                            td
+                                                p Esponja Star Lux
+                                            td
+                                                p R$ 15.00
+                                            td
+                                                label.allright aprovado
+                                        tr
+                                            td
+                                                p Esponja Star Lux
+                                            td
+                                                p R$ 15.00
+                                            td
+                                                label.allright aprovado
+                                        tr
+                                            td
+                                                p Esponja Star Lux
+                                            td
+                                                p R$ 15.00
+                                            td
+                                                label.allright aprovado
+                    .row
+                        .container-fluid.marginTop
+                            +makeBox("disable")
+                                center
+                                    button() Download do Comprovante
+                    .row.marginTop
+                        .subExpense2
+                            +makeBox("disable","Comprovante")
+                                
+                        .subExpense2
+                            +makeBox("disable","Histórico de compras do morador")
+                                table.data#expenseTable2
+                                    thead
+                                        tr
+                                            td
+                                                p Data
+                                            td
+                                                p Titulo
+                                            td
+                                                p Valor
+                                            td
+                                                p Status
+                                    tbody
+                                        tr
+                                            td
+                                                p 15/04
+                                            td
+                                                p Compra Rex
+                                            td
+                                                p R$ 15.00
+                                            td
+                                                label.allright aprovado
+                                        tr
+                                            td
+                                                p 15/04
+                                            td
+                                                p Compra Rex
+                                            td
+                                                p R$ 15.00
+                                            td
+                                                label.attention aguardando
+                                        tr
+                                            td
+                                                p 15/04
+                                            td
+                                                p Compra Rex
+                                            td
+                                                p R$ 15.00
+                                            td
+                                                label.danger desaprovado
+                                        tr
+                                            td
+                                                p 15/04
+                                            td
+                                                p Compra Rex
+                                            td
+                                                p R$ 15.00
+                                            td
+                                                label.allright aprovado
+                    .row
+                        .container-fluid.marginTop
+                            +makeBox("disable","Histórico deste tipo de conta")
+                                table.data#expenseTable2
+                                    thead
+                                        tr
+                                            td
+                                                p Data
+                                            td
+                                                p Descrição
+                                            td
+                                                p Valor
+                                            td
+                                                p Status
+                                    tbody
+                                        tr
+                                            td
+                                                p 15/04
+                                            td
+                                                p 01 Protetor de Fogão, 01 Vassoura, 01 Panela de Pressão, 02 Copos, ...
+                                            td
+                                                p R$ 15.00
+                                            td
+                                                label.allright aprovado
+        footer
+            include include/_footer.pug
+        include include/_js-imports.pug

@@ -109,7 +109,7 @@ button
         text-align: left
         margin-bottom: .5em
         label
-            margin-right: 1em
+            margin-right: 1em !important
 .box
     background:
         color: $__COLOR__white
@@ -184,8 +184,8 @@ table
 .pageTitle
     @extende .row
     border-bottom: solid 1px  lighten($__COLOR__gray,30)
-    margin-bottom: 3em
-    margin-top: 1em
+    margin-bottom: 2em
+    margin-top: .01em
     .subPageTitle
         @include responsive_system(6,6,6,6,6)
         &:first-child
@@ -228,6 +228,47 @@ table
         height: 1em
         width: 10%
         background-image: -moz-linear-gradient(bottom, #4A00E0 0%, #8E2DE2 100%)
+.informCard
+    cursor: pointer
+    height: 100px
+    padding-left: 4%
+    padding-right: 4%
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+    &[class="bg-red"]
+        background-color: $__COLOR__red !important
+        &:hover
+            background-color: lighten($__COLOR__red, 5)
+    &[class="bg-blue"]
+        background-color: $__COLOR__blue
+        &:hover
+            background-color: lighten($__COLOR__blue, 5)
+    &[class="bg-teal"]
+        background-color: $__COLOR__teal
+        &:hover
+            background-color: lighten($__COLOR__teal, 5)
+    &[class="bg-indigo"]
+        background-color: $__COLOR__indigo
+        &:hover
+            background-color: lighten($__COLOR__indigo, 5)
+    img
+        width: 50%
+    //&:first-child
+        //img
+            //@include border_radius(50%)
+    .subInformCard
+        background-color: transparent
+        &:first-child
+            width:      30%
+            float:      left
+            text-align: left
+        &:last-child
+            width:      70%
+            float:      right
+            text-align: right
+    
 //-------------------------------------------------------------------------------//
 
 

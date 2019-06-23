@@ -62,14 +62,15 @@ mixin makeBox(scrollOption, sectionTitle, status)
                 .boxStatusHeader
                     each statusLabel in status
                         label(class= statusLabel.class )= statusLabel.text
+                        | 
                 .boxBody.container-fluid
                     block
             else
                 .boxBody
                     block
 
-mixin makeInformCard(iconPath,title,subTitle)
-    .informCard
+mixin makeInformCard(iconPath,classAttr,title,subTitle)
+    .informCard(class= classAttr)
         .subInformCard
             img(src= iconPath)
         .subInformCard
