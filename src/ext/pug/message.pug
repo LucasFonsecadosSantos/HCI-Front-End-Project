@@ -1,0 +1,80 @@
+// DEVELOPED BY: Lucas Fonseca dos Santos
+///////////////////////////////////////////////////////////////////////////////////
+///                                                                             ///
+/// [PROJECT]: Name: null                                                       ///
+///            URL:  null                                                       ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+/// [DEVELOPMENT]:  Code Developer:   Lucas Fonseca dos Santos.                 ///
+///                 System Developer: Lucas Fonseca dos Santos.                 ///
+///                 Design Creater:   Lucas Fonseca dos Santos.                 ///
+///                 Tester:           Lucas Fonseca dos Santos.                 ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+/// [INFORMATIONS]: Fonts:  Ubuntu, 300, 400, 500, 700                          ///
+///                         Open Sans, 300, 400, 600, 700                       ///
+///                         Open Sans Condensed, 300, 700                       ///
+///                 Colors: #000000                                             ///
+///                         #000000                                             ///
+///                         #000000                                             ///
+///                         #000000                                             ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+///   Use .content to write class .container by bootstrap and .line to write    ///
+///   .row class by bootstrap.                                                  ///
+///                                                                             ///
+///   Use mixin extend_grid() with the params: LG value, MD value, SM value,    ///
+///   XS value in respective order to extend grid system of bootstrap.          ///
+///                                                                             ///
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///                              FILE INFORMATION                               ///
+///-----------------------------------------------------------------------------///
+/// [NAME]: Core                                                                ///
+/// [CONTENT]: Responsible for all front end struct.                            ///
+///////////////////////////////////////////////////////////////////////////////////
+doctype html
+html
+    head
+        include include/_mixins.pug
+        //----------------------------[METAS]----------------------------//
+        +headerSettings("myRepublic - Detalhes da Tarefa","None description.","myRepublic","#5659A6")
+        //---------------------------------------------------------------//
+        //---------------------------[IMPORTS]---------------------------//
+        include include/_link-imports.pug
+        //---------------------------------------------------------------//
+    body(onload="taskPage()", page="task")
+        header
+            include include/_header.pug
+            +republicBanner("incendiaria","Detalhes da Tarefa")
+        main
+            section
+                .myWrapper
+                    +pageTitle("", "Detalhes da Tarefa")
+                    .row.informCardRow
+                        .informCardContainer
+                            +makeInformCard("img/elements/icons/done.svg","bg-indigo","Status","realizada")
+                        .informCardContainer
+                            +makeInformCard("img/elements/icons/calendar.svg","bg-indigo","Tipo","rotineira")
+                        .informCardContainer
+                            +makeInformCard("img/elements/icons/manager.svg","bg-indigo","Realizado por","Fulano Ciclano da Silva")
+                        
+                    .row
+                        .container-fluid.marginTop
+                            +makeBox("disable","Rotina programada para esta tarefa")
+                                table.data#taskTable1
+                                    thead
+                                        tr
+                                            td
+                                                p Data
+                                            td
+                                                p Status
+                                    tbody
+                                        tr
+                                            td
+                                                p 13/05
+                                            td
+                                                label.allright realizado
+        footer
+            include include/_footer.pug
+        include include/_js-imports.pug

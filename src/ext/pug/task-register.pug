@@ -51,8 +51,7 @@ html
             section
                 .myWrapper
                     +pageTitle("", "home > controle > registro de tarefa")
-                    .box(scroll="disable")
-                        +sectionTitle("preencha o formulário a seguir")
+                    +makeBox("disable","Preencha o formulário a seguir")
                         form(action="task-listation.html")
                             .row.registerFormLine
                                 .subTaskRegisterForm(style="display: inline")

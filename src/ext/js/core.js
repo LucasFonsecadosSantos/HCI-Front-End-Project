@@ -110,3 +110,21 @@ function addTaskDwellers(form) {
     combo.remove(combo.selectedIndex);
     document.getElementById("taskDwellerTable").insertRow(0).insertCell(0).innerHTML = dweller;
 }
+
+
+//TASK PAGE
+/*
+function taskPage() {
+    import { Calendar } from '@fullcalendar/core';
+    import dayGridPlugin from '@fullcalendar/daygrid';
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new Calendar(calendarEl, {
+        plugins: [ dayGridPlugin ]
+    });
+
+    calendar.render();
+    });
+}*/
