@@ -1,0 +1,185 @@
+// DEVELOPED BY: Lucas Fonseca dos Santos
+///////////////////////////////////////////////////////////////////////////////////
+///                                                                             ///
+/// [PROJECT]: Name: null                                                       ///
+///            URL:  null                                                       ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+/// [DEVELOPMENT]:  Code Developer:   Lucas Fonseca dos Santos.                 ///
+///                 System Developer: Lucas Fonseca dos Santos.                 ///
+///                 Design Creater:   Lucas Fonseca dos Santos.                 ///
+///                 Tester:           Lucas Fonseca dos Santos.                 ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+/// [INFORMATIONS]: Fonts:  Ubuntu, 300, 400, 500, 700                          ///
+///                         Open Sans, 300, 400, 600, 700                       ///
+///                         Open Sans Condensed, 300, 700                       ///
+///                 Colors: #000000                                             ///
+///                         #000000                                             ///
+///                         #000000                                             ///
+///                         #000000                                             ///
+/// +-------------------------------------------------------------------------+ ///
+///                                                                             ///
+///   Use .content to write class .container by bootstrap and .line to write    ///
+///   .row class by bootstrap.                                                  ///
+///                                                                             ///
+///   Use mixin extend_grid() with the params: LG value, MD value, SM value,    ///
+///   XS value in respective order to extend grid system of bootstrap.          ///
+///                                                                             ///
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///                              FILE INFORMATION                               ///
+///-----------------------------------------------------------------------------///
+/// [NAME]: Core                                                                ///
+/// [CONTENT]: Responsible for all front end struct.                            ///
+///////////////////////////////////////////////////////////////////////////////////
+doctype html
+html
+    head
+        include include/_mixins.pug
+        //----------------------------[METAS]----------------------------//
+        +headerSettings("myRepublic - Lista de Moradores.","None description.","myRepublic","#5659A6")
+        //---------------------------------------------------------------//
+        //---------------------------[IMPORTS]---------------------------//
+        include include/_link-imports.pug
+        //---------------------------------------------------------------//
+    body(onload="", page="dweller-list")
+        header
+            include include/_header.pug
+            +republicBanner("incendiaria","Lista de Moradores da República")
+        main
+            section
+                .myWrapper
+                    +pageTitle("", "Moradores")
+                    .row
+                        .container-fluid.marginTop
+                            +makeBox("disable","Lista de moradores")
+                                p Clique no morador para mais detalhes.
+                                br
+                                table.data#dwellerTable1
+                                    thead
+                                        tr
+                                            td
+                                                p ID:
+                                            td
+                                                p Nome:
+                                            td
+                                                p Status:
+                                            td
+                                                p Tipo:
+                                            td
+                                                p Ação:
+                                    tbody
+                                        tr
+                                            td
+                                                p #014
+                                            td
+                                                p Lucas Fonseca dos Santos
+                                            td
+                                                label.danger administrador
+                                            td
+                                                label.allright em dia
+                                            td
+                                                p botões
+                                        tr
+                                            td
+                                                p #014
+                                            td
+                                                p Lucas Fonseca dos Santos
+                                            td
+                                                label.information usuário
+                                            td
+                                                label.allright em dia
+                                            td
+                                                p botões
+                                        tr
+                                            td
+                                                p #014
+                                            td
+                                                p Lucas Fonseca dos Santos
+                                            td
+                                                label.danger administrador
+                                            td
+                                                label.allright em dia
+                                            td
+                                                p botões
+                                        tr
+                                            td
+                                                p #014
+                                            td
+                                                p Lucas Fonseca dos Santos
+                                            td
+                                                label.danger administrador
+                                            td
+                                                label.allright em dia
+                                            td
+                                                p botões
+                                        tr
+                                            td
+                                                p #014
+                                            td
+                                                p Lucas Fonseca dos Santos
+                                            td
+                                                label.danger administrador
+                                            td
+                                                label.allright em dia
+                                            td
+                                                p botões
+                                        tr
+                                            td
+                                                p #014
+                                            td
+                                                p Lucas Fonseca dos Santos
+                                            td
+                                                label.danger administrador
+                                            td
+                                                label.allright em dia
+                                            td
+                                                p botões
+                                        tr
+                                            td
+                                                p #014
+                                            td
+                                                p Lucas Fonseca dos Santos
+                                            td
+                                                label.danger administrador
+                                            td
+                                                label.allright em dia
+                                            td
+                                                p botões
+                                        tr
+                                            td
+                                                p #014
+                                            td
+                                                p Lucas Fonseca dos Santos
+                                            td
+                                                label.danger administrador
+                                            td
+                                                label.allright em dia
+                                            td
+                                                p botões
+                                        tr
+                                            td
+                                                p #014
+                                            td
+                                                p Lucas Fonseca dos Santos
+                                            td
+                                                label.danger administrador
+                                            td
+                                                label.allright em dia
+                                            td
+                                                p botões
+                                        tr
+                                            td
+                                                p #014
+                                            td
+                                                p Lucas Fonseca dos Santos
+                                            td
+                                                label.danger administrador
+                                            td
+                                                label.allright em dia
+                                            td
+                                                p botões
+        footer
+            include include/_footer.pug
+        include include/_js-imports.pug

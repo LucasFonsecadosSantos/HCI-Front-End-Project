@@ -1,0 +1,31 @@
+body[page="dweller-list"]
+    .informCardRow
+        margin-bottom: 2em
+    .informCardContainer
+        @include responsive_system(6,6,6,6,6)
+        .informCard
+            background-color: $__COLOR__white
+            img
+                width: 30% !important
+            &:hover
+                background-color: darken($__COLOR__white, 5)
+            h3, p
+                color: $__COLOR__indigo !important
+    .box
+        p
+            color: $__COLOR__dark
+    #dwellerTable1 thead tr td, #dwellerTable1 tbody tr td
+        &:nth-child(1)
+            width: 10%
+        &:nth-child(2)
+            width: 60%
+        &:nth-child(3)
+            width: 10%
+            text-align: center
+        &:nth-child(4)
+            width: 10%
+            text-align: center
+        &:nth-child(5)
+            width: 10%
+            text-align: right
+    

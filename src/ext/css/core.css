@@ -592,11 +592,11 @@ pre code {
 }
 
 .col-xl,
-.col-xl-auto, .col-xl-12, body[page=account-register] .specialFormLine, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine, .col-xl-11, .col-xl-10, body[page=dweller] .subDweller:nth-child(2), body[page=account-register] .subAccountRegister:nth-child(2), .col-xl-9, .col-xl-8, body[page=login] .box .loginHeader .subLoginHeader:last-child, #index02 .subIndex02:nth-child(2), .col-xl-7, .col-xl-6, body[page=message] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle, .col-xl-5, body[page=event] .subEvent:nth-child(3), body[page=event] .subEvent:nth-child(2), body[page=task] .subTask:nth-child(3), body[page=task] .subTask:nth-child(2), body[page=expense] .subExpense:nth-child(3), body[page=expense] .subExpense:nth-child(2), .col-xl-4, body[page=dweller] .subDweller2, body[page=task] .informCardContainer, body[page=expense] .informCardContainer, body[page=login] .box .loginHeader .subLoginHeader:first-child, #index05 .subIndex05, #index02 .subIndex02:nth-child(1), .col-xl-3, #index01 .subIndex01, .col-xl-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1), body[page=event] .subEvent:nth-child(1), body[page=task] .subTask:nth-child(1), body[page=expense] .subExpense:nth-child(1), .col-xl-1, .col-lg,
-.col-lg-auto, .col-lg-12, body[page=account-register] .specialFormLine, .col-lg-11, .col-lg-10, body[page=dweller] .subDweller:nth-child(2), .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, body[page=message] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-lg-5, .col-lg-4, body[page=dweller] .subDweller2, .col-lg-3, .col-lg-2, body[page=dweller] .subDweller:nth-child(1), .col-lg-1, .col-md,
-.col-md-auto, .col-md-12, body[page=account-register] .specialFormLine, .col-md-11, .col-md-10, body[page=dweller] .subDweller:nth-child(2), .col-md-9, .col-md-8, .col-md-7, .col-md-6, body[page=message] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-md-5, .col-md-4, body[page=dweller] .subDweller2, .col-md-3, .col-md-2, body[page=dweller] .subDweller:nth-child(1), .col-md-1, .col-sm,
-.col-sm-auto, .col-sm-12, body[page=account-register] .specialFormLine, .col-sm-11, .col-sm-10, body[page=dweller] .subDweller:nth-child(2), .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, body[page=message] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-sm-5, .col-sm-4, body[page=dweller] .subDweller2, .col-sm-3, .col-sm-2, body[page=dweller] .subDweller:nth-child(1), .col-sm-1, .col,
-.col-auto, .col-12, body[page=account-register] .specialFormLine, .col-11, .col-10, body[page=dweller] .subDweller:nth-child(2), .col-9, .col-8, .col-7, .col-6, body[page=message] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-5, .col-4, body[page=dweller] .subDweller2, .col-3, .col-2, body[page=dweller] .subDweller:nth-child(1), .col-1 {
+.col-xl-auto, .col-xl-12, body[page=account-register] .specialFormLine, body[page=task-register] .specialFormLine, body[page=expense-register] .specialFormLine, .col-xl-11, .col-xl-10, body[page=dweller] .subDweller:nth-child(2), body[page=account-register] .subAccountRegister:nth-child(2), .col-xl-9, .col-xl-8, body[page=login] .box .loginHeader .subLoginHeader:last-child, #index02 .subIndex02:nth-child(2), .col-xl-7, .col-xl-6, body[page=message] .informCardContainer, body[page=dweller-list] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle, .col-xl-5, body[page=event] .subEvent:nth-child(3), body[page=event] .subEvent:nth-child(2), body[page=task] .subTask:nth-child(3), body[page=task] .subTask:nth-child(2), body[page=expense] .subExpense:nth-child(3), body[page=expense] .subExpense:nth-child(2), .col-xl-4, body[page=dweller] .subDweller2, body[page=task] .informCardContainer, body[page=expense] .informCardContainer, body[page=login] .box .loginHeader .subLoginHeader:first-child, #index05 .subIndex05, #index02 .subIndex02:nth-child(1), .col-xl-3, #index01 .subIndex01, .col-xl-2, body[page=dweller] .subDweller:nth-child(1), body[page=account-register] .subAccountRegister:nth-child(1), body[page=event] .subEvent:nth-child(1), body[page=task] .subTask:nth-child(1), body[page=expense] .subExpense:nth-child(1), .col-xl-1, .col-lg,
+.col-lg-auto, .col-lg-12, body[page=account-register] .specialFormLine, .col-lg-11, .col-lg-10, body[page=dweller] .subDweller:nth-child(2), .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, body[page=message] .informCardContainer, body[page=dweller-list] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-lg-5, .col-lg-4, body[page=dweller] .subDweller2, .col-lg-3, .col-lg-2, body[page=dweller] .subDweller:nth-child(1), .col-lg-1, .col-md,
+.col-md-auto, .col-md-12, body[page=account-register] .specialFormLine, .col-md-11, .col-md-10, body[page=dweller] .subDweller:nth-child(2), .col-md-9, .col-md-8, .col-md-7, .col-md-6, body[page=message] .informCardContainer, body[page=dweller-list] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-md-5, .col-md-4, body[page=dweller] .subDweller2, .col-md-3, .col-md-2, body[page=dweller] .subDweller:nth-child(1), .col-md-1, .col-sm,
+.col-sm-auto, .col-sm-12, body[page=account-register] .specialFormLine, .col-sm-11, .col-sm-10, body[page=dweller] .subDweller:nth-child(2), .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, body[page=message] .informCardContainer, body[page=dweller-list] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-sm-5, .col-sm-4, body[page=dweller] .subDweller2, .col-sm-3, .col-sm-2, body[page=dweller] .subDweller:nth-child(1), .col-sm-1, .col,
+.col-auto, .col-12, body[page=account-register] .specialFormLine, .col-11, .col-10, body[page=dweller] .subDweller:nth-child(2), .col-9, .col-8, .col-7, .col-6, body[page=message] .informCardContainer, body[page=dweller-list] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, .col-5, .col-4, body[page=dweller] .subDweller2, .col-3, .col-2, body[page=dweller] .subDweller:nth-child(1), .col-1 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -640,7 +640,7 @@ pre code {
   max-width: 41.6666666667%;
 }
 
-.col-6, body[page=message] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle {
+.col-6, body[page=message] .informCardContainer, body[page=dweller-list] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle {
   flex: 0 0 50%;
   max-width: 50%;
 }
@@ -817,7 +817,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-sm-6, body[page=message] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle {
+  .col-sm-6, body[page=message] .informCardContainer, body[page=dweller-list] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -998,7 +998,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-md-6, body[page=message] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle {
+  .col-md-6, body[page=message] .informCardContainer, body[page=dweller-list] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -1179,7 +1179,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-lg-6, body[page=message] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle {
+  .col-lg-6, body[page=message] .informCardContainer, body[page=dweller-list] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -1360,7 +1360,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-xl-6, body[page=message] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle {
+  .col-xl-6, body[page=message] .informCardContainer, body[page=dweller-list] .informCardContainer, body[page=dweller] .subDwellerDetails, body[page=account-register] .subAccountRegisterForm, body[page=task-register] .subTaskRegisterForm, body[page=expense-register] .subExpenseRegisterForm, body[page=task] .subTask2, body[page=expense] .subExpense2, #index03 .subIndex03, .pageTitle .subPageTitle {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -10556,6 +10556,43 @@ body[page=dweller] #dwellerTable3 thead tr td:nth-child(3), body[page=dweller] #
 body[page=dweller] #dwellerTable3 thead tr td:nth-child(4), body[page=dweller] #dwellerTable3 tbody tr td:nth-child(4) {
   width: 30%;
   text-align: center;
+}
+
+body[page=dweller-list] .informCardRow {
+  margin-bottom: 2em;
+}
+body[page=dweller-list] .informCardContainer .informCard {
+  background-color: #fff;
+}
+body[page=dweller-list] .informCardContainer .informCard img {
+  width: 30% !important;
+}
+body[page=dweller-list] .informCardContainer .informCard:hover {
+  background-color: #f2f2f2;
+}
+body[page=dweller-list] .informCardContainer .informCard h3, body[page=dweller-list] .informCardContainer .informCard p {
+  color: #3f51b5 !important;
+}
+body[page=dweller-list] .box p {
+  color: #424242;
+}
+body[page=dweller-list] #dwellerTable1 thead tr td:nth-child(1), body[page=dweller-list] #dwellerTable1 tbody tr td:nth-child(1) {
+  width: 10%;
+}
+body[page=dweller-list] #dwellerTable1 thead tr td:nth-child(2), body[page=dweller-list] #dwellerTable1 tbody tr td:nth-child(2) {
+  width: 60%;
+}
+body[page=dweller-list] #dwellerTable1 thead tr td:nth-child(3), body[page=dweller-list] #dwellerTable1 tbody tr td:nth-child(3) {
+  width: 10%;
+  text-align: center;
+}
+body[page=dweller-list] #dwellerTable1 thead tr td:nth-child(4), body[page=dweller-list] #dwellerTable1 tbody tr td:nth-child(4) {
+  width: 10%;
+  text-align: center;
+}
+body[page=dweller-list] #dwellerTable1 thead tr td:nth-child(5), body[page=dweller-list] #dwellerTable1 tbody tr td:nth-child(5) {
+  width: 10%;
+  text-align: right;
 }
 
 body[page=message] .informCardRow {
