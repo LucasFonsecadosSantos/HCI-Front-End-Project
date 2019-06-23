@@ -38,43 +38,29 @@ html
     head
         include include/_mixins.pug
         //----------------------------[METAS]----------------------------//
-        +headerSettings("myRepublic - Detalhes da Tarefa","None description.","myRepublic","#5659A6")
+        +headerSettings("myRepublic - Mensagem.","None description.","myRepublic","#5659A6")
         //---------------------------------------------------------------//
         //---------------------------[IMPORTS]---------------------------//
         include include/_link-imports.pug
         //---------------------------------------------------------------//
-    body(onload="taskPage()", page="task")
+    body(onload="", page="message")
         header
             include include/_header.pug
-            +republicBanner("incendiaria","Detalhes da Tarefa")
+            +republicBanner("incendiaria","Detalhes da Mensagem")
         main
             section
                 .myWrapper
-                    +pageTitle("", "Detalhes da Tarefa")
+                    +pageTitle("", "Titulo da Mensagem")
                     .row.informCardRow
                         .informCardContainer
-                            +makeInformCard("img/elements/icons/done.svg","bg-indigo","Status","realizada")
+                            +makeInformCard("img/elements/icons/calendar.svg","bg-indigo","Data","13/02/2019")
                         .informCardContainer
-                            +makeInformCard("img/elements/icons/calendar.svg","bg-indigo","Tipo","rotineira")
-                        .informCardContainer
-                            +makeInformCard("img/elements/icons/manager.svg","bg-indigo","Realizado por","Fulano Ciclano da Silva")
-                        
+                            +makeInformCard("img/elements/icons/manager.svg","bg-indigo","Postado por","Fulano Ciclano da Silva")
                     .row
-                        .container-fluid.marginTop
+                        .container-fluid
                             +makeBox("disable","Rotina programada para esta tarefa")
-                                table.data#taskTable1
-                                    thead
-                                        tr
-                                            td
-                                                p Data
-                                            td
-                                                p Status
-                                    tbody
-                                        tr
-                                            td
-                                                p 13/05
-                                            td
-                                                label.allright realizado
+                                p.
+                                    Todavia, a consulta aos diversos militantes causa impacto indireto na reavaliação dos índices pretendidos. Gostaria de enfatizar que o desenvolvimento contínuo de distintas formas de atuação prepara-nos para enfrentar situações atípicas decorrentes de todos os recursos funcionais envolvidos. Caros amigos, a expansão dos mercados mundiais é uma das consequências do processo de comunicação como um todo. Percebemos, cada vez mais, que a consolidação das estruturas estende o alcance e a importância do remanejamento dos quadros funcionais. A prática cotidiana prova que o julgamento imparcial das eventualidades apresenta tendências no sentido de aprovar a manutenção de alternativas às soluções ortodoxas. 
         footer
             include include/_footer.pug
         include include/_js-imports.pug

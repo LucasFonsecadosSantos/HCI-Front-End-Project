@@ -1,78 +1,17 @@
 body[page="message"]
-    .marginTop
-        margin-top: 2em
     .informCardRow
         margin-bottom: 2em
     .informCardContainer
-        @include responsive_system(4,4,4,4,4)
+        @include responsive_system(6,6,6,6,6)
         .informCard
             background-color: $__COLOR__white
+            img
+                width: 30% !important
             &:hover
                 background-color: darken($__COLOR__white, 5)
             h3, p
                 color: $__COLOR__indigo !important
-    .subTask2
-        @include responsive_system(6,6,6,6,6)
-        display: flex
-    .subTask
-        //display: flex
-        &:nth-child(1)
-            @include responsive_system(2,2,2,2,2)
-            .boxShadow
-                margin-bottom: 2em !important
-                &:last-child
-                    margin-bottom: 0px !important
-        &:nth-child(2)
-            @include responsive_system(5,5,5,5,5)
-            display: flex
-        &:nth-child(3)
-            @include responsive_system(5,5,5,5,5)
-            display: flex
-            .boxShadow
-                margin-bottom: 2em !important
-                &:last-child
-                    margin-bottom: 0px !important
-        .box
-            //display: block
-    #taskDay
-        //padding: 2.5em 0
-        h1
-            font:
-                size:   10em    !important
-                weight: 900     !important
-            margin: 0px         !important
+    .box
         p
-            color: #4A00E0
-            margin: 0px         !important
-            margin-top: -.5em    !important
-            font:
-                size: 1.5em       !important
-
-    #taskTable1 thead tr td,#taskTable1 tbody tr td
-        &:nth-child(1)
-            width: 75%
-        &:nth-child(2)
-            width: 25%
-            text-align: center
-    #taskTable2 thead tr td,#taskTable2 tbody tr td
-        &:nth-child(1)
-            width: 10%
-        &:nth-child(2)
-            width: 55%
-        &:nth-child(3)
-            width: 20%
-            text-align: center
-        &:nth-child(4)
-            width: 15%
-            text-align: center
-    #taskTable3 thead tr td,#taskTable3 tbody tr td
-        &:nth-child(1)
-            width: 10%
-        &:nth-child(2)
-            width: 30%
-        &:nth-child(3)
-            width: 30%
-            text-align: center
-        &:nth-child(4)
-            width: 30%
-            text-align: center
+            color: $__COLOR__dark
+    
