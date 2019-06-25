@@ -1,3 +1,26 @@
+function taskRegisterDisplay() {
+    if (document.getElementById("opt01").checked) {
+        document.getElementById("dia01").style.display="flex";
+        document.getElementById("dia02").style.display="none";
+    } else if (document.getElementById("opt02").checked) {
+        document.getElementById("dia01").style.display="none";
+        document.getElementById("dia02").style.display="flex";
+    }
+}
+
+function pressKeyToSubmit(event, form) {
+    if(event && event.keyCode == 13) {
+        //document.forms[0].submit();
+        loginSimulation(form);
+    }
+}
+
+function enterToSubmit(event) {
+    if(event && event.keyCode == 13) {
+        document.forms[0].submit();
+    }
+}
+
 function loginSimulation(loginForm) {
     if (loginFieldsValidation(loginForm)) {
         if ((loginForm.user.value == "user1@email.com") && (loginForm.password.value == "123456") ) {

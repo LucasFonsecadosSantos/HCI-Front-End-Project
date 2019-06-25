@@ -46,7 +46,7 @@ html
     body(page="login")
         section
             .box(scroll="disable")
-                form(action="#", method="POST")
+                form(action="#", method="POST", onkeypress="return pressKeyToSubmit(event,this)")
                     .loginHeader
                         .subLoginHeader
                            img(src="img/elements/logo_purple.svg", title="Seja bem vindo ao myRepublic.", alt="Logotipo do sistema myRepublic.")

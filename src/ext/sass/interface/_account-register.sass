@@ -21,9 +21,14 @@ body[page="account-register"]
         margin-bottom: 2em
     .specialFormLine
         @include responsive_system(12,12,12,12,12)
+        input, select, textarea, label
+            margin-bottom: 0px !important
+        p
+            color: $__COLOR__dark
+            font-size: .8em
     .subAccountRegisterForm
         @include responsive_system(6,6,6,6,6)
-        input
+        input, select, textarea, label
             margin-bottom: 0px !important
         p
             color: $__COLOR__dark

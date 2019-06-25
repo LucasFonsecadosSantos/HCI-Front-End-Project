@@ -55,45 +55,45 @@ html
                         form(action="task-listation.html")
                             .row.registerFormLine
                                 .subTaskRegisterForm(style="display: inline")
-                                    input(type="text", name="title", placeholder="Titulo da tarefa", title="Insira neste campo um titulo para a tarefa a ser registrada. Ex.: Limpar a casa", alt="Campo para informar um titulo para a tarefa a ser registrada.")
+                                    input(type="text", name="title", placeholder="* Titulo da tarefa", title="Insira neste campo um titulo para a tarefa a ser registrada. Ex.: Limpar a casa", alt="Campo para informar um titulo para a tarefa a ser registrada.")
                                     p Ex.: Limpeza da Casa
                                 .subTaskRegisterForm
                                     fieldset.row.fix
-                                        input(style="width: auto",type="radio", name="dateMode", title="Selecione essa opção caso você queira selecionar manualmente as datas de execução desta tarefa.", alt="Campo para escolher selecionar manualmente as datas de execução desta tarefa.")
+                                        input#opt01(onclick="taskRegisterDisplay()",style="width: auto",type="radio", name="dateMode", title="Selecione essa opção caso você queira selecionar manualmente as datas de execução desta tarefa.", alt="Campo para escolher selecionar manualmente as datas de execução desta tarefa.")
                                         p Selecionar manualmente as datas para execução
-                                        input(style="width: auto",type="radio", name="dateMode", title="Selecione essa opção caso você queira selecionar manualmente as datas de execução desta tarefa.", alt="Campo para escolher selecionar manualmente as datas de execução desta tarefa.")
+                                        input#opt02(onclick="taskRegisterDisplay()",style="width: auto",type="radio", name="dateMode", title="Selecione essa opção caso você queira selecionar manualmente as datas de execução desta tarefa.", alt="Campo para escolher selecionar manualmente as datas de execução desta tarefa.")
                                         p Selecionar automaticamente as datas para a execução
                                     
-                            .row.registerFormLine
-                                .subTaskRegisterForm
-                                    .row.fix
-                                        input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
-                                        p Domingo
-                                        input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
-                                        p Segunda-Feira
-                                        input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
-                                        p Terça-Feira
-                                        input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
-                                        p Quarta-Feira
-                                        input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
-                                        p Quinta-Feira
-                                        input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
-                                        p Sexta-Feira
-                                        input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
-                                        p Sabado
-                                .subTaskRegisterForm(style="display: inline")
-                                    .fix2
-                                        input(type="date", name="manualTaskDate", id="manualDate", title="Selecione uma data para esta tarefa ser executada. Ex.: 13/02/2019", alt="Campo para selecionar uma data para a tarefa ser executada.")
-                                        button(type="button", onclick="addManualTaskDate(this.form)") +
-                                        p Ex.: 13/02/2019
-                                    table.data#manualDateData
-                                        //tr
-                                            td 13/02/2019
+                            .row.specialFormLine(style="display: inline")
+                                
+                                .row.fix#dia01(style="display:none;")
+                                    input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
+                                    p Domingo
+                                    input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
+                                    p Segunda-Feira
+                                    input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
+                                    p Terça-Feira
+                                    input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
+                                    p Quarta-Feira
+                                    input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
+                                    p Quinta-Feira
+                                    input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
+                                    p Sexta-Feira
+                                    input(name="1",type="checkbox", alt="Caixa de seleção para selecionar o dia de Segunda-Feira.", title="Marque esta opção para selecionar o dia de segunda feira.")
+                                    p Sabado
+                            
+                                .fix2#dia02(style="display:none;")
+                                    input(type="date", name="manualTaskDate", id="manualDate", title="Selecione uma data para esta tarefa ser executada. Ex.: 13/02/2019", alt="Campo para selecionar uma data para a tarefa ser executada.")
+                                    button(type="button", onclick="addManualTaskDate(this.form)") +
+                                    p Ex.: 13/02/2019
+                                table.data#manualDateData
+                                    //tr
+                                        td 13/02/2019
 
                             .row.registerFormLine
                                 .subTaskRegisterForm(style="display: inline")
                                     .fix2
-                                        select(id="dweller", style="margin-bottom: 0px !important", name="dweller", placeholder="- Selecione um morador -", title="Selecione um morador para ficar responsável pela tarefa.", alt="Campo para selecionar o(s) morador(es) envolvido(s) na presente tarefa.")
+                                        select(id="dweller", style="margin-bottom: 0px !important", name="dweller", placeholder="- * Selecione um morador -", title="Selecione um morador para ficar responsável pela tarefa.", alt="Campo para selecionar o(s) morador(es) envolvido(s) na presente tarefa.")
                                             option(value="0", selected) - Selecione um morador -
                                             option(value="15") Lucas Fonseca dos Santos
                                             option(value="15") Marco Aurélio Ferreira de Sousa
@@ -108,6 +108,7 @@ html
                                         
                             .row.specialFormLine(style="display: inline")
                                 textarea(name="additionalInformation",rows="5", alt="Campo para inserir informações adicionais sobre a tarefa.", title="Insira neste campo informações adicionais sobre a tarefa.", placeholder="Informações adicionais")
+                                p Ex.: Caracteristicas, modo de executar...
                             .row.specialFormLine(style="display: inline")
                                 button.btn-blue(type="submit", alt="Botão para registrar a nova tarefa.", title="Clique para registrar a nova tarefa.") registrar
                                 button.btn-blue(type="submit", alt="Botão para limpar o formulário de registro.", title="Clique para limpar o formulário de registro.") limpar formulário

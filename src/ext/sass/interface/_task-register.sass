@@ -5,6 +5,11 @@ body[page="task-register"]
             margin-right: 1em
     .specialFormLine
         @include responsive_system(12,12,12,12,12)
+        input, select, textarea, label
+            margin-bottom: 0px !important
+        p
+            color: $__COLOR__dark
+            font-size: .8em
     .subTaskRegisterForm
         @include responsive_system(6,6,6,6,6)
         display: flex
@@ -28,7 +33,7 @@ body[page="task-register"]
                 margin-right: .250em
             input[type="checkbox"]
                 margin-right: .250em
-        input
+        input, select, textarea, label
             margin-bottom: 0px !important
         p
             color: $__COLOR__dark

@@ -10355,7 +10355,14 @@ body[page=expense-register] .registerFormLine, body[page=expense-register] .spec
 body[page=expense-register] .registerFormLine button, body[page=expense-register] .specialFormLine button {
   margin-right: 1em;
 }
-body[page=expense-register] .subExpenseRegisterForm input {
+body[page=expense-register] .specialFormLine input, body[page=expense-register] .specialFormLine textarea, body[page=expense-register] .specialFormLine label, body[page=expense-register] .specialFormLine select {
+  margin-bottom: 0px !important;
+}
+body[page=expense-register] .specialFormLine p {
+  color: #424242;
+  font-size: 0.8em;
+}
+body[page=expense-register] .subExpenseRegisterForm input, body[page=expense-register] .subExpenseRegisterForm textarea, body[page=expense-register] .subExpenseRegisterForm label {
   margin-bottom: 0px !important;
 }
 body[page=expense-register] .subExpenseRegisterForm p {
@@ -10368,6 +10375,13 @@ body[page=task-register] .registerFormLine, body[page=task-register] .specialFor
 }
 body[page=task-register] .registerFormLine button, body[page=task-register] .specialFormLine button {
   margin-right: 1em;
+}
+body[page=task-register] .specialFormLine input, body[page=task-register] .specialFormLine select, body[page=task-register] .specialFormLine textarea, body[page=task-register] .specialFormLine label {
+  margin-bottom: 0px !important;
+}
+body[page=task-register] .specialFormLine p {
+  color: #424242;
+  font-size: 0.8em;
 }
 body[page=task-register] .subTaskRegisterForm {
   display: flex;
@@ -10399,7 +10413,7 @@ body[page=task-register] .subTaskRegisterForm .fix input[type=radio] {
 body[page=task-register] .subTaskRegisterForm .fix input[type=checkbox] {
   margin-right: 0.25em;
 }
-body[page=task-register] .subTaskRegisterForm input {
+body[page=task-register] .subTaskRegisterForm input, body[page=task-register] .subTaskRegisterForm select, body[page=task-register] .subTaskRegisterForm textarea, body[page=task-register] .subTaskRegisterForm label {
   margin-bottom: 0px !important;
 }
 body[page=task-register] .subTaskRegisterForm p {
@@ -10493,7 +10507,14 @@ body[page=account-register] #profilePic {
   height: 100%;
   margin-bottom: 2em;
 }
-body[page=account-register] .subAccountRegisterForm input {
+body[page=account-register] .specialFormLine input, body[page=account-register] .specialFormLine select, body[page=account-register] .specialFormLine textarea, body[page=account-register] .specialFormLine label {
+  margin-bottom: 0px !important;
+}
+body[page=account-register] .specialFormLine p {
+  color: #424242;
+  font-size: 0.8em;
+}
+body[page=account-register] .subAccountRegisterForm input, body[page=account-register] .subAccountRegisterForm select, body[page=account-register] .subAccountRegisterForm textarea, body[page=account-register] .subAccountRegisterForm label {
   margin-bottom: 0px !important;
 }
 body[page=account-register] .subAccountRegisterForm p {

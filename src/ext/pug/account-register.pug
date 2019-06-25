@@ -51,7 +51,7 @@ html
             section
                 .myWrapper
                     +pageTitle("", "Registro de conta")
-                    form(action="#", method="POST")
+                    form(action="#", method="POST", onkeypress="enterToSubmit(event)")
                         .row
                             .subAccountRegister
                                 +makeBox("disable")
@@ -63,26 +63,26 @@ html
                                 +makeBox("disable","Preencha o formulário a seguir")
                                     .row.registerFormLine
                                         .subAccountRegisterForm
-                                            input(type="text", required, name="name", placeholder="Nome completo", title="Qual é seu nome completo? Informe neste campo. Ex.: Fulano Ciclano da Silva", alt="Campo para inserir seu nome completo.")
+                                            input(type="text", required, name="name", placeholder="* Nome completo", title="Qual é seu nome completo? Informe neste campo. Ex.: Fulano Ciclano da Silva", alt="Campo para inserir seu nome completo.")
                                             p Ex.: João da Silva Ciclano
                                         .subAccountRegisterForm
-                                            select(required, name="sex", title="Selecione o sexo. Ex.: Feminino", alt="Campo de seleção para selecionar o sexo.")
+                                            select(required, name="sex", title="* Selecione o sexo. Ex.: Feminino", alt="Campo de seleção para selecionar o sexo.")
                                                 option(value="0", selected) -- SELECIONE O SEXO --
                                                 option(value="1") Masculino
                                                 option(value="1") Feminino
                                                 option(value="2") Outro
                                     .row.registerFormLine
                                         .subAccountRegisterForm
-                                            input(type="text", required, name="cpf", placeholder="CPF", title="Insira seu CPF. NÃO UTILIZE PONTUAÇÃO. Ex.: 42552449875", alt="Campo para inserção de seu CPF. Não utilize pontução.")
+                                            input(type="text", required, name="cpf", placeholder="* CPF", title="Insira seu CPF. NÃO UTILIZE PONTUAÇÃO. Ex.: 42552449875", alt="Campo para inserção de seu CPF. Não utilize pontução.")
                                             p 
                                                 | Ex.: 42552449875 
                                                 strong (Não utilize pontuação)
                                         .subAccountRegisterForm
-                                            input(type="text", required, name="rg", placeholder="R.G.", title="Qual é seu RG? Informe neste campo. NÃO UTILIZE PONTUAÇÃO. Ex.: 129288019", alt="Campo para inserir seu rg. Não utilize pontuação..")
+                                            input(type="text", required, name="rg", placeholder="* R.G.", title="Qual é seu RG? Informe neste campo. NÃO UTILIZE PONTUAÇÃO. Ex.: 129288019", alt="Campo para inserir seu rg. Não utilize pontuação..")
                                             p Ex.: 129288019
                                     .row.registerFormLine
                                         .subAccountRegisterForm
-                                            input(type="text", required, name="collegeCourse", placeholder="O que você cursa?", title="Conte-nos o que voce cursa. Ex.: Bacharelado em Ciência da Computação.", alt="Campo para informar qual curso você faz.")
+                                            input(type="text", required, name="collegeCourse", placeholder="* O que você cursa?", title="Conte-nos o que voce cursa. Ex.: Bacharelado em Ciência da Computação.", alt="Campo para informar qual curso você faz.")
                                             p Ex.: Bacharelado em Ciência da Computação.
                                         .subAccountRegisterForm
                                             input(type="text", name="nickname", placeholder="Apelido", title="Qual apelido te deram? Ex.: incendiario. Caso ainda não possuir, deixar este campo em branco.", alt="Campo para informar o seu apelido. Caso ainda não possuir, deixar este campo em branco.")
@@ -98,7 +98,7 @@ html
                                         //tr
                                             td Lucas Fonseca dos Santos
                                     .row.specialFormLine
-                                        input#telephone1(type="text", name="telephone1", placeholder="Qual seu telefone? Você pode adicionar varios!", title="Adicione um número de telefone.",alt="Campo para inserir um número de telefone.")
+                                        input#telephone1(type="text", name="telephone1", placeholder="* Qual seu telefone? Você pode adicionar varios!", title="Adicione um número de telefone.",alt="Campo para inserir um número de telefone.")
                                         button.btn-blue#addTelephoneBtn(type="button",onclick="addDwellerTelephone(this)",alt="Botão para adicionar um número de telefone.", title="Clique para adicionar seu número de telefone.") Adicionar Telefone
                                         p Ex.: +55 (16) 99169-9662
                                         p Números de telefone adicionados:
@@ -106,7 +106,7 @@ html
                                         //tr
                                             td Lucas Fonseca dos Santos
                                     .row.specialFormLine
-                                        input#familyTelephone(type="text", name="telephone2", placeholder="Adicione número de telefone de um familiar.", title="Adicione um número de telefone de um familiar.",alt="Campo para inserir um número de telefone de familiares.")
+                                        input#familyTelephone(type="text", name="telephone2", placeholder="* Adicione número de telefone de um familiar.", title="Adicione um número de telefone de um familiar.",alt="Campo para inserir um número de telefone de familiares.")
                                         button.btn-blue#addFamilyTelephoneBtn(type="button",onclick="addDwellerFamilyTelephone(this)",alt="Botão para adicionar um número de telefone.", title="Clique para adicionar seu número de telefone.") Adicionar Telefone
                                         p 
                                             | Ex.: +55 (16) 99169-9662.
@@ -117,20 +117,21 @@ html
                                             td Lucas Fonseca dos Santos
                                     .row.registerFormLine
                                         .subAccountRegisterForm
-                                            input(type="email", required, name="email", placeholder="E-mail", title="Insira seu E-mail. Ex.: fulano@email.com.br.", alt="Campo para inserir um endereço de e-mail.")
+                                            input(type="email", required, name="email", placeholder="* E-mail", title="Insira seu E-mail. Ex.: fulano@email.com.br.", alt="Campo para inserir um endereço de e-mail.")
                                             p Ex.: fulano@email.com.br.
                                         .subAccountRegisterForm
                                             input(type="text", name="website", placeholder="Website", title="Você possui algum website? Ex.: fulano.com.br", alt="Campo para insrir um website.")
                                             p Ex.: fulano.com.br
                                     .row.registerFormLine
                                         .subAccountRegisterForm
-                                            input(type="text", required, name="user", placeholder="Usuário", title="Escolha um usuário. Ex.: fulano", alt="Campo para informar uma credencial de usuário.")
+                                            input(type="text", required, name="user", placeholder="* Usuário", title="Escolha um usuário. Ex.: fulano", alt="Campo para informar uma credencial de usuário.")
                                             p Ex.: fulano.
                                         .subAccountRegisterForm
-                                            input(type="password", required, name="password", placeholder="Senha", title="Escolha uma senha.", alt="Campo para informar uma credencial de senha.")
+                                            input(type="password", required, name="password", placeholder="* Senha", title="Escolha uma senha.", alt="Campo para informar uma credencial de senha.")
                                             p Dica: Utilize números e letras.
                                     .row.specialFormLine
-                                        textarea(name="additionalInformation",rows="5", alt="Campo para inserir informações adicionais sobre a despesa.", title="Insira neste campo informações adicionais sobre a despesa.", placeholder="Informações adicionais")
+                                        textarea(name="additionalInformation",rows="5", alt="Campo para inserir informações adicionais sobre você.", title="Insira neste campo informações adicionais sobre você.", placeholder="Informações adicionais")
+                                        p Ex.: Caracteristicas, peculiaridades sobre você...
                                     .row.specialFormLine(style="display: inline")
                                         button.btn-blue(type="submit", alt="Botão para registrar a nova conta.", title="Clique para registrar a nova conta.") registrar
                                         button.btn-blue(type="submit", alt="Botão para limpar o formulário de registro.", title="Clique para limpar o formulário de registro.") limpar formulário

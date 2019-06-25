@@ -5,9 +5,14 @@ body[page="expense-register"]
             margin-right: 1em
     .specialFormLine
         @include responsive_system(12,12,12,12,12)
+        input, textarea, label, select
+            margin-bottom: 0px !important
+        p
+            color: $__COLOR__dark
+            font-size: .8em
     .subExpenseRegisterForm
         @include responsive_system(6,6,6,6,6)
-        input
+        input, textarea, label
             margin-bottom: 0px !important
         p
             color: $__COLOR__dark

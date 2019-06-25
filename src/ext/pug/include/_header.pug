@@ -1,5 +1,5 @@
 nav.navbar.fixed-top.navbar-expand-lg.menu
-    a.navbar-brand(href="index.html")
+    a.navbar-brand(href="index.html",alt="Logo myRepublic.", title="myRepublic - Revolucionando moradia compartilhada.")
         .logoContent
             img.mainLogo(style="width: 6% !important", src="img/elements/logo_white.svg")
             //p myRepublic
@@ -8,29 +8,29 @@ nav.navbar.fixed-top.navbar-expand-lg.menu
     .collapse.navbar-collapse#navbarSupportedContent
         ul.navbar-nav.mr-0.ml-auto(style="float: right")
             li.nav-item.active
-                a.nav-link(href="index.html") Inicio
+                a.nav-link(href="index.html", alt="Botão de navegação para retornar ao ínicio.", title="Clique para retornar a página inicial.") Inicio
             li.nav-item
-                a.nav-link(href="dweller-listation.html") moradores
+                a.nav-link(href="dweller-listation.html", alt="Botão de navegação do menu para listar os moradores registrados.", title="Clique para listar todos os moradores registrados.") moradores
             li.nav-item
-                a.nav-link(href="expense-listation.html") despesas
+                a.nav-link(href="expense-listation.html", title="Clique para listar todas as despesas registradas.", alt="Botão de navegação do menu para registrar todas as despesas registradas.") despesas
             li.nav-item
-                a.nav-link(href="message-feed.html") mensagens
+                a.nav-link(href="message-feed.html", title="Clique para acessar o mural de mensagens.", alt="Botão de navegação do menu para acessar o mural de mensagens.") mensagens
             li.nav-item
-                a.nav-link(href="indexes.html") índices
+                a.nav-link(href="indexes.html", alt="Botão de navegação do menu para acessar página de índices.", title="Clique para observar os indicadores e curvas.") índices
             li.nav-item.dropdown
-                a.nav-link.dropdown-toggle#navbarDropdown(href="#", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") controle
+                a.nav-link.dropdown-toggle#navbarDropdown(href="#", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false",alt="Botão de navegação para registrar.", title="Selecione algo para registrar.") registrar
                 .dropdown-menu#navMenu(aria-labelledby="navbarDropdown")
                     //a.dropdown-item(href="#") Registrar tarefa
-                    a.dropdown-item(href="expense-register.html")   Registrar Despesa
-                    a.dropdown-item(href="event-register.html")     Registrar Evento
+                    a.dropdown-item(href="expense-register.html",title="Clique para registrar uma nova despesa.", alt="Botão de navegação do menu para registrar uma nova despesa.")   Registrar Despesa
+                    a.dropdown-item(href="event-register.html", alt="Botão de navegação para registrar um novo evento.", title="Clique para registrar um novo evento.")     Registrar Evento
                     //.dropdown-divider
                     //a.dropdown-item(href="#") Something else here
       
             li.nav-item.dropdown
                 a.nav-link.dropdown-toggle#navbarDropdown(href="#", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Fulano
                 .dropdown-menu#navMenu(aria-labelledby="navbarDropdown")
-                    a.dropdown-item(href="dweller.html") Editar Conta
-                    a.dropdown-item(href="about.html")      Sobre o Sistema
-                    a.dropdown-item(href="bug-report.html") Reportar um Problema
+                    a.dropdown-item(href="dweller.html", title="Clique para editar os destalhes e informações sobre você.", alt="Botão de navegação do menu para editar informações de sua conta.") Editar Conta
+                    a.dropdown-item(href="about.html", title="Clique para saber mais sobre o sistema, como licenças e desenvolvedores.",alt="Botão de navegação do menu para saber mais sobre o sistema.")      Sobre o Sistema
+                    a.dropdown-item(href="bug-report.html", title="Clique aqui caso queira reportar algum erro.", alt="Botão de navegação do menu para reportar um erro do sistema") Reportar um Problema
                     .dropdown-divider
-                    a.dropdown-item(href="login.html")      Logout
+                    a.dropdown-item(href="login.html",alt="Botão de navegação do menu para sair do sistema.", title="Clique aqui para sair de sua conta.")      Logout
